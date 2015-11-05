@@ -1,0 +1,25 @@
+[user]
+	name = matsub
+	email = matsub.rk@gmail.com
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[alias]
+	st = status --short --branch
+	co = checkout
+	tree = log --graph --date=short --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
+[merge]
+	ff = false
+	tool = vimdiff
+[push]
+	default = current
+[pull]
+	rebase = true
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
