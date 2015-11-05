@@ -38,7 +38,7 @@ function statusline#on()
 	setlocal statusline+=%=
 	" RO
 	" row column filetype filestyle
-	setlocal statusline+=%#RArrow3#%{g:status_arrow}\ %#Level3#%{&filetype}%{b:filestyle}
+	setlocal statusline+=%#RArrow3#%{g:status_arrow}\ %#Level3#%{&ft}%{b:filestyle}
 	setlocal statusline+=\ %#RArrow2#%{g:status_arrow}\ %#Level2#%P
 	setlocal statusline+=\ %#RArrow1#%{g:status_arrow}\ %#Level1#%l:%c\ \  
 endfunction
