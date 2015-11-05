@@ -3,3 +3,5 @@ setlocal shiftwidth=4
 setlocal softtabstop=4
 setlocal noautoindent
 setlocal wrap
+
+setlocal tags+=python.tags
