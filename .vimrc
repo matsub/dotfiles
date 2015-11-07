@@ -28,8 +28,7 @@ set nolist
 " space & indent
 set tabstop=4
 set shiftwidth=4
-set textwidth=0
-set smarttab
+set textwidth=80
 set autoindent
 set smartindent
 set smarttab
@@ -89,8 +88,13 @@ noremap <S-Down> <Nop>
 noremap <S-Right> <Nop>
 noremap <S-Left> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 
-" window resize
-nnoremap du :wincmd w<CR>:normal u<CR>:wincmd w<CR>
+" addreviate
+inoremap <C-J> <Esc>/<++><CR><Esc>cf>
+inoremap ( ()<++><Esc>F)i
+inoremap [ []<++><Esc>F]i
+inoremap " ""<++><Esc>F]i
+inoremap { {}<++><Esc>F}i
+inoremap {<CR> {}<++><Esc>F}i<CR><Tab>
 
 " ===============
 "    NEOBUNDLE
