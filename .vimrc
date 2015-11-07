@@ -75,7 +75,7 @@ colorscheme gruvbox
 "    MAPPING
 " -------------
 " mapping
-noremap ; :
+nnoremap ; :
 nnoremap <C-]> g<C-]>
 
 " disable arrow key
@@ -89,12 +89,12 @@ noremap <S-Right> <Nop>
 noremap <S-Left> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 
 " addreviate
-inoremap <C-J> <Esc>/<++><CR><Esc>cf>
+noremap <C-J> <Esc>/<++><CR><Esc>cf>
 inoremap ( ()<++><Esc>F)i
 inoremap [ []<++><Esc>F]i
 inoremap " ""<++><Esc>F]i
 inoremap { {}<++><Esc>F}i
-inoremap {<CR> {}<++><Esc>F}i<CR><Tab>
+inoremap {<CR> {<CR>}<++><Esc>k$a<CR>
 
 " ===============
 "    NEOBUNDLE
@@ -124,7 +124,7 @@ filetype plugin indent on
 "    bundle configuration
 " --------------------------
 " auto-ctags
-let g:auto_ctags_filetype_mode = 1
+	let g:auto_ctags_filetype_mode = 1
 
 " jedi-vim
 	autocmd FileType python let b:did_ftplugin = 1
