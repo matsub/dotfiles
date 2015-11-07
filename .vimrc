@@ -90,9 +90,10 @@ noremap <S-Left> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 
 " addreviate
 noremap <C-J> <Esc>/<++><CR><Esc>cf>
+inoremap <C-J> <Esc>/<++><CR><Esc>cf>
 inoremap ( ()<++><Esc>F)i
 inoremap [ []<++><Esc>F]i
-inoremap " ""<++><Esc>F]i
+inoremap " ""<++><Esc>F"i
 inoremap { {}<++><Esc>F}i
 inoremap {<CR> {<CR>}<++><Esc>k$a<CR>
 
