@@ -70,7 +70,7 @@
 	" color set
 	set t_Co=256
 	set background=dark
-	colorscheme gruvbox
+	colorscheme gruvbox/colors/gruvbox
 
 " =============
 "    MAPPING
@@ -80,7 +80,8 @@
 	nnoremap <C-]> g<C-]>
 
 	" fold
-	nnoremap <Space> za
+	nnoremap <Space> zMzv
+	nnoremap <CR> za
 
 	" arrow key
 		" fold
@@ -118,7 +119,6 @@
 
 		" plugins for appearance
 		NeoBundle 'nathanaelkane/vim-indent-guides'
-		NeoBundle 'altercation/vim-colors-solarized'
 
 		" plugins for syntax
 		NeoBundle 'hail2u/vim-css3-syntax'

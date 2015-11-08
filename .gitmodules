@@ -2,3 +2,6 @@
 	path = .zsh/auto-fu.zsh
 	url = git@github.com:hchbaw/auto-fu.zsh.git
 	branch = pu
+[submodule ".vim/colors/gruvbox"]
+	path = .vim/colors/gruvbox
+	url = git@github.com:morhetz/gruvbox.git
