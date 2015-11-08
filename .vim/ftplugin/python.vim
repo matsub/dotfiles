@@ -1,7 +1,11 @@
 setlocal shiftwidth=4
 setlocal softtabstop=4
 setlocal noautoindent
+setlocal nosmartindent
+setlocal cc=+1
 setlocal wrap
+setlocal foldminlines=6
+setlocal foldnestmax=3
 
 setlocal tags+=python.tags
 
