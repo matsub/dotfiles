@@ -77,7 +77,7 @@ alias la="ls -laG"
 alias l="ls -lG"
 alias py="python3"
 alias pip="pip3"
-alias pep="pep8"
+alias gcc="/opt/homebrew/bin/gcc-5"
 alias dict="python3 ~/Code/sandbox/dictionary/dictionary.py"
 
 # routine
