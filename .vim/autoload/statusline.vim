@@ -42,7 +42,7 @@ endfunction
 function statusline#off()
 	" set statusline
 	" leftside
-	setlocal statusline=%#Level3#\ [%n]
+	setlocal statusline=%#Off#\ [%n]
 	setlocal statusline+=\ \ \ \ %{b:currentbranch}
 	setlocal statusline+=\ \ \ %t\ %m%r
 
