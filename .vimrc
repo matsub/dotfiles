@@ -1,139 +1,145 @@
 " ==========================
 "    EDITOR CONFIGURATION
 " --------------------------
-" control codes
-set backspace=indent,eol,start
+	" editor config
+	set autoread
+	set nobackup
+	set showmatch
+	set matchtime=3
+	set exrc
+	set secure
 
-" syntax
-filetype on
-syntax on
+	" control codes
+	set backspace=indent,eol,start
 
-" encoding
-scriptencoding utf-8
-set encoding=utf-8
-set fileencoding=utf-8
+	" syntax
+	filetype on
+	syntax on
 
-" disable beep
-set vb t_vb=
+	" completion
+	set completeopt=menuone,preview
+	set showfulltag
 
-" word search
-set ignorecase
-set smartcase
-set showmatch
-set hlsearch
+	" fold
+	set foldmethod=indent
+	set foldminlines=4
+	set foldnestmax=4
 
-" hide tab & newline character
-set nolist
+	" disable beep
+	set vb t_vb=
 
-" space & indent
-set tabstop=4
-set shiftwidth=4
-set textwidth=80
-set autoindent
-set smartindent
-set smarttab
-set expandtab
+	" word search
+	set ignorecase
+	set smartcase
+	set hlsearch
+	set incsearch
 
-" filename completion
-set wildmenu
-set wildignorecase
-set wildignore=*.o,*.pyc
-set nobackup
-inoremap # X#
+	" hide tab & newline character
+	set nolist
 
-" tag depth
-set tags=./tags,tags;~/
+	" space & indent
+	set tabstop=4
+	set shiftwidth=4
+	set textwidth=80
+	set autoindent
+	set smartindent
+	set smarttab
+	set expandtab
 
-" Binary Edit
-" http://d.hatena.ne.jp/rdera/20081022/1224682665
-augroup BinaryXXD
-	autocmd!
-	autocmd BufReadPre *.bin let &binary=1
-	autocmd BufReadPost * if &binary | silent %!xxd -g 2
-	autocmd BufReadPost * set ft=xxd | endif
-	autocmd BufWritePre * if &binary | %!xxd -r
-	autocmd BufWritePre * endif
-	autocmd BufWritePost * if &binary | silent %!xxd -g 2
-	autocmd BufWritePost * set nomod | endif
-augroup END
+	" filename completion
+	set wildmenu
+	set wildignorecase
+	set wildignore=*.o,*.pyc
+	inoremap # X#
+
+	" tag depth
+	set tags=./tags,tags;~/
+
 
 " ================
 "    APPEARANCE
 " ----------------
-" appearance
-set number
-set title
-set cursorline
-set nowrap
+	" appearance
+	set number
+	set cursorline
+	set title
+	set nowrap
+	set display=lastline
+	set noshowcmd
 
-" solarized
-set t_Co=256
-set background=dark
-colorscheme gruvbox
+	" color set
+	set t_Co=256
+	set background=dark
+	colorscheme gruvbox
 
 " =============
 "    MAPPING
 " -------------
-" mapping
-nnoremap ; :
-nnoremap <C-]> g<C-]>
+	" mapping
+	nnoremap ; :
+	nnoremap <C-]> g<C-]>
 
-" disable arrow key
-noremap <xUp> <Nop>
-noremap <xDown> <Nop>
-noremap <xRight> <Nop>
-noremap <xLeft> <Nop>
-noremap <S-Up> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
-noremap <S-Down> <Nop>
-noremap <S-Right> <Nop>
-noremap <S-Left> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
+	" fold
+	nnoremap <Space> za
 
-" addreviate
-noremap <C-J> <Esc>/<++><CR><Esc>cf>
-inoremap <C-J> <Esc>/<++><CR><Esc>cf>
-inoremap ( ()<++><Esc>F)i
-inoremap [ []<++><Esc>F]i
-inoremap " ""<++><Esc>F"i
-inoremap { {}<++><Esc>F}i
-inoremap {<CR> {<CR>}<++><Esc>k$a<CR>
+	" arrow key
+		" fold
+		nnoremap <xUp> zk
+		nnoremap <xDown> zj
+		nnoremap <xRight> za
+		nnoremap <xLeft> zMzv
+
+		" tag jump
+		nnoremap <C-Up> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
+		nnoremap <C-Left> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
+
+		" QuickFix
+		nnoremap <C-Down> <Nop>
+		nnoremap <C-Right> <Nop>
+
+		" 
+		nnoremap <S-Up> <Nop>
+		nnoremap <S-Down> <Nop>
+		nnoremap <S-Right> <Nop>
+		nnoremap <S-Left> <Nop>
 
 " ===============
 "    NEOBUNDLE
 " ---------------
-" bundle
-set runtimepath+=~/.vim/bundle/neobundle.vim/
+	" bundle
+	set runtimepath+=~/.vim/bundle/neobundle.vim/
 
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-	" plugins for system
-	NeoBundleFetch 'Shougo/neobundle.vim'
-	NeoBundle 'davidhalter/jedi-vim'
-	NeoBundle 'soramugi/auto-ctags.vim'
+	" Required:
+	call neobundle#begin(expand('~/.vim/bundle/'))
+		" plugins for system
+		NeoBundleFetch 'Shougo/neobundle.vim'
+		NeoBundle 'davidhalter/jedi-vim'
+		NeoBundle 'soramugi/auto-ctags.vim'
 
-	" plugins for appearance
-	NeoBundle 'nathanaelkane/vim-indent-guides'
-	NeoBundle 'altercation/vim-colors-solarized'
+		" plugins for appearance
+		NeoBundle 'nathanaelkane/vim-indent-guides'
+		NeoBundle 'altercation/vim-colors-solarized'
 
-	" plugins for syntax
-	NeoBundle 'hail2u/vim-css3-syntax'
-call neobundle#end()
+		" plugins for syntax
+		NeoBundle 'hail2u/vim-css3-syntax'
+	call neobundle#end()
 
-" Required:
-filetype plugin indent on
+	" Required:
+	filetype plugin indent on
 
 " --------------------------
 "    bundle configuration
 " --------------------------
-" auto-ctags
-	let g:auto_ctags_filetype_mode = 1
+	" auto-ctags
+		let g:auto_ctags_filetype_mode = 1
 
-" jedi-vim
-	autocmd FileType python let b:did_ftplugin = 1
-	autocmd FileType python setlocal completeopt-=preview
+	" jedi-vim
+		autocmd FileType python let b:did_ftplugin = 1
+		autocmd FileType python setlocal completeopt-=preview
 
-" vim-indent-guides
-	let g:indent_guides_auto_colors=0
-	autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=240
-	autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=238
-	let g:indent_guides_enable_on_vim_startup=1
-	let g:indent_guides_guide_size=1
+	" vim-indent-guides
+		let g:indent_guides_auto_colors=0
+		autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=240
+		autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=238
+		let g:indent_guides_enable_on_vim_startup=1
+		let g:indent_guides_guide_size=1
