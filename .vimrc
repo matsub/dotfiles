@@ -84,25 +84,25 @@
 	nnoremap <CR> za
 
 	" arrow key
-		" fold
-		nnoremap <xUp> zk
-		nnoremap <xDown> zj
-		nnoremap <xRight> za
-		nnoremap <xLeft> zMzv
+	" fold
+	nnoremap <xUp> zk
+	nnoremap <xDown> zj
+	nnoremap <xRight> za
+	nnoremap <xLeft> zMzv
 
-		" tag jump
-		nnoremap <C-Up> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
-		nnoremap <C-Left> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
+	" tag jump
+	nnoremap <C-Up> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
+	nnoremap <C-Left> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 
-		" QuickFix
-		nnoremap <C-Down> <Nop>
-		nnoremap <C-Right> <Nop>
+	" QuickFix
+	nnoremap <C-Down> <Nop>
+	nnoremap <C-Right> <Nop>
 
-		" 
-		nnoremap <S-Up> <Nop>
-		nnoremap <S-Down> <Nop>
-		nnoremap <S-Right> <Nop>
-		nnoremap <S-Left> <Nop>
+	" 
+	nnoremap <S-Up> <Nop>
+	nnoremap <S-Down> <Nop>
+	nnoremap <S-Right> <Nop>
+	nnoremap <S-Left> <Nop>
 
 " ===============
 "    NEOBUNDLE
@@ -131,15 +131,15 @@
 "    bundle configuration
 " --------------------------
 	" auto-ctags
-		let g:auto_ctags_filetype_mode = 1
+	let g:auto_ctags_filetype_mode = 1
 
 	" jedi-vim
-		autocmd FileType python let b:did_ftplugin = 1
-		autocmd FileType python setlocal completeopt-=preview
+	autocmd FileType python let b:did_ftplugin = 1
+	autocmd FileType python setlocal completeopt-=preview
 
 	" vim-indent-guides
-		let g:indent_guides_auto_colors=0
-		autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=240
-		autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=238
-		let g:indent_guides_enable_on_vim_startup=1
-		let g:indent_guides_guide_size=1
+	let g:indent_guides_auto_colors=0
+	autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=240
+	autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=238
+	let g:indent_guides_enable_on_vim_startup=1
+	let g:indent_guides_guide_size=1
