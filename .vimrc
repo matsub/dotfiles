@@ -65,7 +65,6 @@
 	set title
 	set nowrap
 	set display=lastline
-	set noshowcmd
 
 	" color set
 	set t_Co=256
@@ -79,6 +78,12 @@
 	nnoremap ; :
 	nnoremap <C-]> g<C-]>
 
+	" file open
+	nnoremap g<CR> :vertical wincmd f<CR>
+
+	" placeholding
+	inoremap <c-j> <Esc>/<++><CR><Esc>cf>
+
 	" fold
 	nnoremap <Space> zMzv
 	nnoremap <CR> za
@@ -87,7 +92,7 @@
 	" fold
 	nnoremap <xUp> zk
 	nnoremap <xDown> zj
-	nnoremap <xRight> za
+	nnoremap <xRight> zO
 	nnoremap <xLeft> zMzv
 
 	" tag jump
@@ -95,7 +100,7 @@
 	nnoremap <C-Left> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 
 	" QuickFix
-	nnoremap <C-Down> <Nop>
+	nnoremap <C-Down> :make<CR>:copen<CR><CR>
 	nnoremap <C-Right> <Nop>
 
 	" 
