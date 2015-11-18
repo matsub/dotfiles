@@ -20,11 +20,6 @@
 	set completeopt=menuone,preview
 	set showfulltag
 
-	" fold
-	set foldmethod=indent
-	set foldminlines=4
-	set foldnestmax=4
-
 	" disable beep
 	set vb t_vb=
 
@@ -84,17 +79,6 @@
 	" placeholding
 	inoremap <c-j> <Esc>/<++><CR><Esc>cf>
 
-	" fold
-	nnoremap <Space> zMzv
-	nnoremap <CR> za
-
-	" arrow key
-	" fold
-	nnoremap <xUp> zk
-	nnoremap <xDown> zj
-	nnoremap <xRight> zO
-	nnoremap <xLeft> zMzv
-
 	" tag jump
 	nnoremap <C-Up> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 	nnoremap <C-Left> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
@@ -104,6 +88,12 @@
 	nnoremap <C-Right> <Nop>
 
 	" 
+	nnoremap <Space> <Nop>
+	nnoremap <CR> <Nop>
+	nnoremap <xUp> <Nop>
+	nnoremap <xDown> <Nop>
+	nnoremap <xRight> <Nop>
+	nnoremap <xLeft> <Nop>
 	nnoremap <S-Up> <Nop>
 	nnoremap <S-Down> <Nop>
 	nnoremap <S-Right> <Nop>
