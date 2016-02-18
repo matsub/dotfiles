@@ -4,3 +4,4 @@
 [submodule ".zsh/plugins/auto-fu.zsh"]
 	path = .zsh/plugins/auto-fu.zsh
 	url = https://github.com/hchbaw/auto-fu.zsh.git
+	branch = pu
