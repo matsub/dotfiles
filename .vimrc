@@ -20,6 +20,11 @@
 	set completeopt=menuone,preview
 	set showfulltag
 
+	" fold
+	set foldmethod=indent
+	set foldminlines=20
+	set foldnestmax=2
+
 	" disable beep
 	set vb t_vb=
 
@@ -47,9 +52,14 @@
 	set wildignore=*.o,*.pyc
 	inoremap # X#
 
+	" windows
+	set splitbelow
+	set splitright
+	set switchbuf=useopen,split
+	set noequalalways
+
 	" tag depth
 	set tags=./tags,tags;~/
-
 
 " ================
 "    APPEARANCE
@@ -77,7 +87,11 @@
 	nnoremap g<CR> :vertical wincmd f<CR>
 
 	" placeholding
-	inoremap <c-j> <Esc>/<++><CR><Esc>cf>
+	inoremap <C-j> <Esc>/<++><CR><Esc>cf>
+
+	" fold
+	nnoremap <Space> zMzv
+	nnoremap <CR> za
 
 	" tag jump
 	nnoremap <C-Up> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
@@ -87,13 +101,24 @@
 	nnoremap <C-Down> :make<CR>:copen<CR><CR>
 	nnoremap <C-Right> <Nop>
 
-	" 
-	nnoremap <Space> <Nop>
-	nnoremap <CR> <Nop>
-	nnoremap <xUp> <Nop>
-	nnoremap <xDown> <Nop>
-	nnoremap <xRight> <Nop>
-	nnoremap <xLeft> <Nop>
+	" buffer moving
+	nnoremap [b :bprev<CR>
+	nnoremap ]b :bnext<CR>
+	nnoremap [q :cprev<CR>
+	nnoremap ]q :cnext<CR>
+	nnoremap [z zk
+	nnoremap ]z zj
+
+	" command maps
+	cnoremap <C-p> <Up>
+	cnoremap <C-n> <Down>
+
+	" nops
+	nnoremap K <Nop>
+	nnoremap <Up> <Nop>
+	nnoremap <Down> <Nop>
+	nnoremap <Right> <Nop>
+	nnoremap <Left> <Nop>
 	nnoremap <S-Up> <Nop>
 	nnoremap <S-Down> <Nop>
 	nnoremap <S-Right> <Nop>
@@ -122,8 +147,8 @@
 	" Required:
 	filetype plugin indent on
 
-" --------------------------
-"    bundle configuration
+" ==========================
+"    plugin configuration
 " --------------------------
 	" auto-ctags
 	let g:auto_ctags_filetype_mode = 1

@@ -1,4 +1,5 @@
 # path
+fpath=($HOME/.zsh/plugins/*(N-/) $fpath)
 typeset -U path cdpath fpath manpath
 
 # complete
@@ -16,8 +17,8 @@ export LANG=ja_JP.UTF-8
 
 # HISTORY
 HISTFILE=~/.zsh_history
-HISTSIZE=128
-SAVEHIST=128
+HISTSIZE=512
+SAVEHIST=512
 setopt hist_ignore_dups
 setopt share_history
 
@@ -107,11 +108,11 @@ function emacs() {
 
 
 # texmod
-source ~/Code/jreporttools/latexmod.zsh
+source $HOME/.zsh/plugins/jreporttools/jreporttools.zsh
 
 
 # auto-fu
-source ~/.zsh/auto-fu.zsh/auto-fu.zsh
+source $HOME/.zsh/plugins/auto-fu.zsh/auto-fu.zsh
 function zle-line-init () {
     auto-fu-init
 }

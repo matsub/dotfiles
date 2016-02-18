@@ -35,7 +35,7 @@ function statusline#on()
 
 	" rightside
 	setlocal statusline+=%=\ %#Level3#%{&ft}
-	setlocal statusline+=\ %#Arrow2#%{g:stl_rarrow}%#Level2#%{b:filestyle}
+	setlocal statusline+=\ %#Arrow2#%{g:stl_rarrow}%#Level2#\ %{b:filestyle}
 	setlocal statusline+=\ %#Arrow1#%{g:stl_rarrow}%#Level1#\ \ %P\ \ %l:%c\ \  
 endfunction
 
