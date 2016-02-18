@@ -1,11 +1,3 @@
-[submodule ".vim/colors/gruvbox"]
-	path = .vim/colors/gruvbox
-	url = git@github.com:morhetz/gruvbox.git
-[submodule ".zsh/plugins/auto-fu.zsh"]
-	path = .zsh/plugins/auto-fu.zsh
-	url = git@github.com:hchbaw/auto-fu.zsh.git
-	branch = pu
-[submodule ".zsh/plugins/jreporttools"]
-	path = .zsh/plugins/jreporttools
-	url = git@github.com:matsub/jreporttools.git
-	branch = master
+[submodule ".vim/colors/.vim/colors/gruvbox"]
+	path = .vim/colors/.vim/colors/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
