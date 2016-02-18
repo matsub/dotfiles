@@ -108,7 +108,6 @@ function emacs() {
 
 
 # texmod
-source $HOME/.zsh/plugins/jreporttools/jreporttools.zsh
 
 
 # auto-fu
