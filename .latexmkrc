@@ -10,4 +10,4 @@ $pdf_previewer = 'open -a Preview';
 
 # you can check this comment out.
 # then succeeded typeset are commited automatically.
-# $pdf_update_command = "git add %T && git commit -m':automatically: :update: typeset;'"
+# $pdf_update_command = "git add %R.pdf && git commit -m':automatically: :update: typeset;'"
