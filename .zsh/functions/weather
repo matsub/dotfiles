@@ -1,0 +1,41 @@
+#!/bin/zsh
+
+function weather() {
+typeset -a mdoes
+typeset locate
+
+help(){
+    echo 'usage: weather [-h | --help] [<location>]'
+    echo ''
+    echo 'Supported locations:'
+    echo '\tparis\t\t\t# city name'
+    echo '\tmuc\t\t\t# airport code (3 letters)'
+    echo '\t@stackoverflow.com\t# domain name'
+    echo ''
+    echo 'options:'
+    echo '\t-h | --help\t\tshow this help'
+}
+
+get_weather(){
+    shellsize=`stty size <&2 | cut -d' ' -f2`
+    if [ $shellsize -ge 125 ]; then
+        curl wttr.in/$1
+    else
+        curl wttr.in/$1 | cut -c1-$shellsize
+    fi
+}
+
+for arg in $*; do
+case $arg in
+    -h|--help)
+        help
+        return;;
+    *)
+        locate=$arg
+esac
+done
+
+get_weather $locate
+}
+
+weather
