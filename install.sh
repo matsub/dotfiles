@@ -9,11 +9,11 @@ case `uname | lower` in
 esac
 }
 
-if [[ -e ~/.dotfiles ]]; then
-    git clone https://github.com/matsub/.dotfiles.git ~/.dotfiles
+if [[ -e .dotfiles ]]; then
+    git clone https://github.com/matsub/.dotfiles.git
     pushd ~/.dotfiles
 else
-    pushd ~/.dotfiles
+    pushd .dotfiles
     git pull origin master:master
 fi
 

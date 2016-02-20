@@ -86,33 +86,10 @@ alias pip="pip3"
 alias gcc="/opt/homebrew/bin/gcc-5"
 alias dict="python3 ~/Code/sandbox/dictionary/dictionary.py"
 
-# routine
-function emacs() {
-    echo -n "Are you sure? [y/n]: "
-    read ans
-    if [[ ! $ans =~ [yY] ]]; then
-        echo "OK. It's cool."
-        return;
-    fi
 
-    echo -n "Would you like to open it with vi?[y/n]: "
-    read ans
-    if [[ $ans =~ [yY] ]]; then
-        vi $@
-        return;
-    fi
-
-    echo -n "Another editor? How about nano?[y/n]: "
-    read ans
-    if [[ $ans =~ [yY] ]]; then
-        nano $@
-    else
-        /usr/bin/emacs $@
-    fi
-}
-
-
-# texmod
+# load functions
+autoload -Uz emacs
+autoload -Uz weather
 
 
 # auto-fu
