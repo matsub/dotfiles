@@ -1,5 +1,10 @@
 # path
-fpath=($HOME/.zsh/plugins/*(N-/) $fpath)
+# thanks http://qiita.com/mollifier/items/6fdeff2750fe80f830c8
+fpath=(
+$HOME/.zsh/functions/
+$HOME/.zsh/plugins/zsh-completions/src
+$fpath
+)
 typeset -U path cdpath fpath manpath
 
 # complete

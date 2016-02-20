@@ -5,3 +5,6 @@
 	path = .zsh/plugins/auto-fu.zsh
 	url = https://github.com/hchbaw/auto-fu.zsh.git
 	branch = pu
+[submodule ".zsh/plugins/zsh-completions"]
+	path = .zsh/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
