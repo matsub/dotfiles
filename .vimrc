@@ -79,6 +79,9 @@
 " =============
 "    MAPPING
 " -------------
+	" disable embedded keymaps
+	vnoremap K <Nop>
+
 	" mapping
 	nnoremap ; :
 	nnoremap <C-]> g<C-]>
