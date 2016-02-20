@@ -1,8 +1,8 @@
 # path
 # thanks http://qiita.com/mollifier/items/6fdeff2750fe80f830c8
 fpath=(
-$HOME/.zsh/functions/
-$HOME/.zsh/plugins/zsh-completions/src
+$ZDOTDIR/functions/
+$ZDOTDIR/plugins/zsh-completions/src
 $fpath
 )
 typeset -U path cdpath fpath manpath
@@ -93,7 +93,7 @@ autoload -Uz weather
 
 
 # auto-fu
-source $HOME/.zsh/plugins/auto-fu.zsh/auto-fu.zsh
+source $ZDOTDIR/plugins/auto-fu.zsh/auto-fu.zsh
 function zle-line-init () {
     auto-fu-init
 }
