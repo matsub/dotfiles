@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [[ -d .dotfiles ]]; then
+if [ -d .dotfiles ]; then
     pushd .dotfiles
     git pull origin master:master
 else
