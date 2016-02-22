@@ -8,7 +8,7 @@ else
     git pull origin master:master
 fi
 
-python3 deploy.py
+python deploy.py
 
 git submodule init
 git submodule update
