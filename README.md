@@ -1,4 +1,4 @@
-how to install
+installing
 ========
 
 ```sh
