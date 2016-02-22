@@ -1,11 +1,11 @@
 #!/bin/sh
 
 if [[ -e .dotfiles ]]; then
-    git clone https://github.com/matsub/.dotfiles.git
-    pushd .dotfiles
-else
     pushd .dotfiles
     git pull origin master:master
+else
+    git clone https://github.com/matsub/.dotfiles.git
+    pushd .dotfiles
 fi
 
 python deploy.py
