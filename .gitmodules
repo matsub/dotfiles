@@ -8,3 +8,6 @@
 [submodule ".zsh/plugins/zsh-completions"]
 	path = .zsh/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
+[submodule ".vim/bundle/neobundle.vim"]
+	path = .vim/bundle/neobundle.vim
+	url = https://github.com/Shougo/neobundle.vim
