@@ -21,8 +21,8 @@ export LANG=ja_JP.UTF-8
 
 # HISTORY
 HISTFILE=~/.zsh_history
-HISTSIZE=512
-SAVEHIST=512
+HISTSIZE=1000
+SAVEHIST=500
 setopt hist_ignore_dups
 setopt share_history
 
@@ -39,6 +39,7 @@ bindkey '' history-beginning-search-forward-end
 autoload colors
 # dir simlink sock que exec block char uid gid sticky unwritable
 # a:black b:red c:green d:brown e:blue f:magenta g:cyan h:white x:none
+# uppercase: bold
 export LSCOLORS=cxfxdxgfbxfxfxdxDxxBxB
 
 # PROMPT
@@ -87,7 +88,7 @@ alias dict="python3 ~/Code/sandbox/dictionary/dictionary.py"
 
 
 # load functions
-autoload -Uz emacs
+# autoload -Uz emacs
 autoload -Uz weather
 
 
