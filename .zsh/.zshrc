@@ -1,5 +1,4 @@
 # path
-# thanks http://qiita.com/mollifier/items/6fdeff2750fe80f830c8
 fpath=(
 $ZDOTDIR/functions/
 $ZDOTDIR/plugins/zsh-completions/src
