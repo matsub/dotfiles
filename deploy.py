@@ -9,10 +9,10 @@ ignore = ['.git', '.gitignore', '.gitmodules']
 dotfiles = re.compile('\.\w+')
 pwd = os.path.dirname( os.path.abspath(__file__) )
 
-if len(sys.argv)>1 and sys.argv[1]=="unlink":
-    cmd = lambda a, l: os.unlink(l) if os.path.islink(l) else None
-else:
+if len(sys.argv) < 2:
     cmd = lambda a, l: None if os.path.islink(l) else os.symlink(a, l)
+elif sys.argv[1] == "unlink":
+    cmd = lambda a, l: os.unlink(l) if os.path.islink(l) else None
 
 for f_name in os.listdir(pwd):
     match = dotfiles.match(f_name)
