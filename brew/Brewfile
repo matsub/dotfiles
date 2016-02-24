@@ -1,0 +1,38 @@
+# Brewfile
+update
+upgrade
+
+# tap
+tap caskroom/cask
+
+# install
+install ctags
+install figlet
+install gauche
+install gawk
+install geoip
+install ghc
+install ghostscript
+install git
+install gnuplot
+install go
+install imagemagick
+install lua
+install mecab
+install mongodb
+install node
+install openssl
+install python
+install python3
+install qt
+install readline
+install sqlite
+install tmux
+install unar
+install vim
+install wireshark
+install zsh
+
+# cask install
+install brew-cask
+cask install basictex
