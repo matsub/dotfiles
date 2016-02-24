@@ -1,0 +1,2 @@
+# git attributes
+.zshenv filter=dotdir

@@ -1,10 +1,21 @@
 #!/bin/sh
-if [ -d dotfiles ]; then
-    pushd dotfiles
-    git pull origin master:master
-else
+
+if [ -z $DOTDIR ]; then
+    # install git at first
+    case `uname` in
+        'Darwin')
+            curl -f https://raw.githubusercontent.com/matsub/dotfiles/master/brew/install.sh | sh || exit $?
+    esac
+
+    # cloning repo
     git clone https://github.com/matsub/dotfiles.git
     pushd dotfiles
+    git config filter.dotdir.clean "sh .zsh/dotdir_guard.sh"
+    { echo "export DOTDIR=`pwd`"; cat .zshenv } | tee .zshenv
+else
+    # update dotfiles
+    pushd $DOTDIR
+    git pull origin master:master
 fi
 
 python deploy.py
@@ -14,10 +25,11 @@ git submodule update
 
 vim -u ~/.vimrc -i NONE -c "try | NeoBundleUpdate! | finally | q! | endtry" -e -s -V1
 
-if [ `uname` = 'Darwin' ]; then
-    pushd brew
-    sh install.sh
-    popd
-fi
+case `uname` in
+    'Darwin')
+        pushd brew
+        brew bundle
+        popd;;
+esac
 
 popd
