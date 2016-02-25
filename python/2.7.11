@@ -1,0 +1,14 @@
+BeautifulSoup>=3.2.1
+beautifulsoup4>=4.3.2
+Flask>=0.10.1
+itsdangerous>=0.24
+Jinja2>=2.7.3
+MarkupSafe>=0.23
+mecab-python>=0.996
+PIL>=1.1.7
+pygame>=1.9.2rc0
+pymongo>=2.7.1
+Skype4Py>=1.0.35
+vboxapi>=1.0
+Werkzeug>=0.9.6
+wheel>=0.26.0
