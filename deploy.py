@@ -5,7 +5,7 @@ import os
 import re
 import sys
 
-ignore = ['.git', '.gitignore', '.gitmodules']
+ignore = ['.git', '.gitattributes', '.gitignore', '.gitmodules']
 dotfiles = re.compile('\.\w+')
 pwd = os.path.dirname( os.path.abspath(__file__) )
 
