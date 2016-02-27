@@ -1,2 +1,2 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 tail -n +2 "$DOTDIR/.zshenv"
