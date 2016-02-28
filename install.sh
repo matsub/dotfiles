@@ -10,7 +10,8 @@ if [ -z $DOTDIR ]; then
     # cloning repo
     git clone https://github.com/matsub/dotfiles.git
     pushd dotfiles
-    git config filter.dotdir.clean "sh .zsh/dotdir_guard.sh"
+    git config filter.dotdir.clean "tail -n +2 `pwd`/.zshenv"
+    git config filter.dotdir.smudge "echo export DOTDIR=`pwd`; cat .zshenv"
     { echo "export DOTDIR=`pwd`"; cat .zshenv } | tee .zshenv
 else
     # update dotfiles
