@@ -55,7 +55,6 @@ SPROMPT='%r is correct? [n, y, a, e]: '
 
 
 # browsing
-bindkey -v
 setopt auto_cd
 setopt auto_pushd
 setopt correct
