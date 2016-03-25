@@ -145,6 +145,7 @@
 
 		" plugins for syntax
 		NeoBundle 'hail2u/vim-css3-syntax'
+		NeoBundle 'othree/html5-syntax.vim'
 	call neobundle#end()
 
 	" Required:
