@@ -17,7 +17,6 @@ function statusline#read()
 	let b:filestyle = join(l:fst, ":")
 
 	" get current branch
-	cd %:p:h
 	let l:outp = system("git rev-parse --abbrev-ref HEAD")
 	if outp[0:4] == "fatal"
 		let b:currentbranch = ""
