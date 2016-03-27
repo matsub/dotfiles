@@ -127,6 +127,9 @@
 	nnoremap <S-Right> <Nop>
 	nnoremap <S-Left> <Nop>
 
+	" plugins
+	nnoremap <F5> :PrevimOpen<CR>
+
 " ===============
 "    NEOBUNDLE
 " ---------------
@@ -139,6 +142,7 @@
 		NeoBundleFetch 'Shougo/neobundle.vim'
 		NeoBundle 'davidhalter/jedi-vim'
 		NeoBundle 'soramugi/auto-ctags.vim'
+		NeoBundle 'kannokanno/previm'
 
 		" plugins for appearance
 		NeoBundle 'nathanaelkane/vim-indent-guides'
@@ -167,3 +171,6 @@
 	autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=238
 	let g:indent_guides_enable_on_vim_startup=1
 	let g:indent_guides_guide_size=1
+
+	" previm
+	let g:previm_open_cmd = 'open'
