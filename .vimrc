@@ -1,176 +1,175 @@
+" =============
+"    PLUGINS
+" -------------
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin(expand('~/.vim/bundle/'))
+" plugins for system
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'soramugi/auto-ctags.vim'
+Plugin 'kannokanno/previm'
+
+" plugins for appearance
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'morhetz/gruvbox'
+
+" plugins for syntax
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'othree/html5-syntax.vim'
+Plugin 'tpope/vim-markdown'
+call vundle#end()
+filetype plugin indent on " required
+
+" ===============================
+"   CONFIGURATIONS FOR PLUGINS
+" -------------------------------
+" auto-ctags
+let g:auto_ctags_filetype_mode = 1
+
+" jedi-vim
+autocmd FileType python let b:did_ftplugin = 1
+autocmd FileType python setlocal completeopt-=preview
+
+" vim-indent-guides
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=240
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=238
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_guide_size=1
+
+" previm
+let g:previm_open_cmd = 'open'
+
 " ==========================
 "    EDITOR CONFIGURATION
 " --------------------------
-	" editor config
-	set autoread
-	set nobackup
-	set showmatch
-	set matchtime=3
-	set exrc
-	set secure
+" editor config
+set nocompatible
+set autoread
+set nobackup
+set showmatch
+set matchtime=3
+set exrc
+set secure
 
-	" control codes
-	set backspace=indent,eol,start
+" control codes
+set backspace=indent,eol,start
 
-	" syntax
-	filetype on
-	syntax on
+" syntax
+syntax on
 
-	" completion
-	set completeopt=menuone,preview
-	set showfulltag
+" completion
+set completeopt=menuone,preview
+set showfulltag
 
-	" fold
-	set foldmethod=indent
-	set foldminlines=20
-	set foldnestmax=2
+" fold
+set foldmethod=indent
+set foldminlines=24
+set foldnestmax=2
 
-	" disable beep
-	set vb t_vb=
+" disable beep
+set vb t_vb=
 
-	" word search
-	set ignorecase
-	set smartcase
-	set hlsearch
-	set incsearch
+" word search
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
 
-	" hide tab & newline character
-	set nolist
+" hide tab & newline character
+set nolist
 
-	" space & indent
-	set tabstop=4
-	set shiftwidth=4
-	set textwidth=80
-	set autoindent
-	set smartindent
-	set smarttab
-	set expandtab
+" space & indent
+set tabstop=4
+set shiftwidth=4
+set textwidth=80
+set autoindent
+set smartindent
+set smarttab
+set expandtab
 
-	" filename completion
-	set wildmenu
-	set wildignorecase
-	set wildignore=*.o,*.pyc
-	inoremap # X#
+" filename completion
+set wildmenu
+set wildignorecase
+set wildignore=*.o,*.pyc
+inoremap # X#
 
-	" windows
-	set splitbelow
-	set splitright
-	set switchbuf=useopen,split
-	set noequalalways
+" windows
+set splitbelow
+set splitright
+set switchbuf=useopen,split
+set noequalalways
 
-	" tag depth
-	set tags=./tags,tags;~/
+" tag depth
+set tags=./tags,tags;~/
 
 " ================
 "    APPEARANCE
 " ----------------
-	" appearance
-	set number
-	set cursorline
-	set title
-	set nowrap
-	set display=lastline
+" appearance
+set number
+set cursorline
+set title
+set nowrap
+set display=lastline
 
-	" color set
-	set t_Co=256
-	set background=dark
-	colorscheme gruvbox/colors/gruvbox
+" color set
+set t_Co=256
+set background=dark
+colorscheme gruvbox
 
 " =============
 "    MAPPING
 " -------------
-	" disable embedded keymaps
-	vnoremap K <Nop>
+" disable embedded keymaps
+vnoremap K <Nop>
 
-	" mapping
-	nnoremap ; :
-	nnoremap <C-]> g<C-]>
+" mapping
+nnoremap ; :
+nnoremap <C-]> g<C-]>
 
-	" file open
-	nnoremap g<CR> :vertical wincmd f<CR>
+" file open
+nnoremap g<CR> :vertical wincmd f<CR>
 
-	" placeholding
-	inoremap <C-j> <Esc>/<++><CR><Esc>cf>
+" placeholding
+inoremap <C-j> <Esc>/<++><CR><Esc>cf>
 
-	" fold
-	nnoremap <Space> zMzv
-	nnoremap <CR> za
+" fold
+nnoremap <Space> zMzv
+nnoremap <CR> za
 
-	" tag jump
-	nnoremap <C-Up> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
-	nnoremap <C-Left> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
+" tag jump
+nnoremap <C-Up> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
+nnoremap <C-Left> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 
-	" QuickFix
-	nnoremap <C-Down> :make<CR>:copen<CR><CR>
-	nnoremap <C-Right> <Nop>
+" QuickFix
+nnoremap <C-Down> :make<CR>:copen<CR><CR>
+nnoremap <C-Right> <Nop>
 
-	" buffer moving
-	nnoremap [b :bprev<CR>
-	nnoremap ]b :bnext<CR>
-	nnoremap [q :cprev<CR>
-	nnoremap ]q :cnext<CR>
-	nnoremap [z zk
-	nnoremap ]z zj
+" buffer moving
+nnoremap [b :bprev<CR>
+nnoremap ]b :bnext<CR>
+nnoremap [q :cprev<CR>
+nnoremap ]q :cnext<CR>
+nnoremap [z zk
+nnoremap ]z zj
 
-	" command maps
-	cnoremap <C-p> <Up>
-	cnoremap <C-n> <Down>
+" command maps
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
 
-	" nops
-	nnoremap K <Nop>
-	nnoremap <Up> <Nop>
-	nnoremap <Down> <Nop>
-	nnoremap <Right> <Nop>
-	nnoremap <Left> <Nop>
-	nnoremap <S-Up> <Nop>
-	nnoremap <S-Down> <Nop>
-	nnoremap <S-Right> <Nop>
-	nnoremap <S-Left> <Nop>
+" nops
+nnoremap K <Nop>
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Right> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <S-Up> <Nop>
+nnoremap <S-Down> <Nop>
+nnoremap <S-Right> <Nop>
+nnoremap <S-Left> <Nop>
 
-	" plugins
-	nnoremap <F5> :PrevimOpen<CR>
-
-" ===============
-"    NEOBUNDLE
-" ---------------
-	" bundle
-	set runtimepath+=~/.vim/bundle/neobundle.vim/
-
-	" Required:
-	call neobundle#begin(expand('~/.vim/bundle/'))
-		" plugins for system
-		NeoBundleFetch 'Shougo/neobundle.vim'
-		NeoBundle 'davidhalter/jedi-vim'
-		NeoBundle 'soramugi/auto-ctags.vim'
-		NeoBundle 'kannokanno/previm'
-
-		" plugins for appearance
-		NeoBundle 'nathanaelkane/vim-indent-guides'
-
-		" plugins for syntax
-		NeoBundle 'hail2u/vim-css3-syntax'
-		NeoBundle 'othree/html5-syntax.vim'
-	call neobundle#end()
-
-	" Required:
-	filetype plugin indent on
-
-" ==========================
-"    plugin configuration
-" --------------------------
-	" auto-ctags
-	let g:auto_ctags_filetype_mode = 1
-
-	" jedi-vim
-	autocmd FileType python let b:did_ftplugin = 1
-	autocmd FileType python setlocal completeopt-=preview
-
-	" vim-indent-guides
-	let g:indent_guides_auto_colors=0
-	autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=240
-	autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=238
-	let g:indent_guides_enable_on_vim_startup=1
-	let g:indent_guides_guide_size=1
-
-	" previm
-	let g:previm_open_cmd = 'open'
+" plugins
+nnoremap <F5> :PrevimOpen<CR>

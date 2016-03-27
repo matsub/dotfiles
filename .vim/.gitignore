@@ -1,3 +1,3 @@
 bundle
-!bundle/neobundle.vim
+!bundle/Vundle.vim
 .netrwhist
