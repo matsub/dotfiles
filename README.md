@@ -18,6 +18,6 @@ python deploy.py unlink
 
 ### remove dotfiles
 ```sh
-cd ..
+cd $DOTDIR
 rm -rf dotfiles
 ```
