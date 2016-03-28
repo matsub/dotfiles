@@ -4,7 +4,7 @@
 call plug#begin(expand('~/.vim/bundle/'))
 " plugins for system
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
-Plug 'soramugi/auto-ctags.vim', {'for': ['python', 'c']}
+Plug 'soramugi/auto-ctags.vim', {'for': ['python', 'c', 'tex']}
 Plug 'kannokanno/previm', {'for': 'markdown'}
 
 " plugins for appearance

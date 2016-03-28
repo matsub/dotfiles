@@ -5,6 +5,5 @@ setlocal softtabstop=4
 setlocal tags+=c.tags
 
 " addreviate
-iab #i #include 
 iab //b /******************************
 iab b// ***************************/
