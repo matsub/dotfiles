@@ -1,26 +1,22 @@
 " =============
 "    PLUGINS
 " -------------
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-
-call vundle#begin(expand('~/.vim/bundle/'))
+call plug#begin(expand('~/.vim/bundle/'))
 " plugins for system
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'davidhalter/jedi-vim'
-Plugin 'soramugi/auto-ctags.vim'
-Plugin 'kannokanno/previm'
+Plug 'davidhalter/jedi-vim', {'for': 'python'}
+Plug 'soramugi/auto-ctags.vim', {'for': ['python', 'c']}
+Plug 'kannokanno/previm', {'for': 'markdown'}
 
 " plugins for appearance
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'morhetz/gruvbox'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'morhetz/gruvbox'
 
 " plugins for syntax
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'othree/html5-syntax.vim'
-Plugin 'tpope/vim-markdown'
-call vundle#end()
-filetype plugin indent on " required
+Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'scss']}
+Plug 'othree/html5-syntax.vim', {'for': ['html', 'markdown']}
+Plug 'tpope/vim-markdown', {'for': 'markdown'}
+filetype plugin indent on
+call plug#end()
 
 " ===============================
 "   CONFIGURATIONS FOR PLUGINS

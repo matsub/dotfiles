@@ -26,7 +26,8 @@ python deploy.py
 git submodule init
 git submodule update
 
-vim -u ~/.vimrc -i NONE -c "try | NeoBundleUpdate! | finally | q! | endtry" -e -s -V1
+curl -fLo .vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall
 
 case `uname` in
     'Darwin')
