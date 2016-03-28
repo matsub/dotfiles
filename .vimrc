@@ -119,12 +119,9 @@ colorscheme gruvbox
 " =============
 "    MAPPING
 " -------------
-" disable embedded keymaps
-vnoremap K <Nop>
-
-" mapping
+" swap
+nnoremap : ;
 nnoremap ; :
-nnoremap <C-]> g<C-]>
 
 " file open
 nnoremap g<CR> :vertical wincmd f<CR>
@@ -137,6 +134,7 @@ nnoremap <Space> zMzv
 nnoremap <CR> za
 
 " tag jump
+nnoremap <C-]> g<C-]>
 nnoremap <C-Up> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap <C-Left> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 
@@ -156,8 +154,11 @@ nnoremap ]z zj
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
-" nops
-nnoremap K <Nop>
+" plugins
+nnoremap <F5> :PrevimOpen<CR>
+
+" disable embedded keymaps
+vnoremap K <Nop>
 nnoremap <Up> <Nop>
 nnoremap <Down> <Nop>
 nnoremap <Right> <Nop>
@@ -166,6 +167,3 @@ nnoremap <S-Up> <Nop>
 nnoremap <S-Down> <Nop>
 nnoremap <S-Right> <Nop>
 nnoremap <S-Left> <Nop>
-
-" plugins
-nnoremap <F5> :PrevimOpen<CR>
