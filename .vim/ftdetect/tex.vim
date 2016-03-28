@@ -1,1 +1,1 @@
-au Bufnewfile,Bufread *.tex set ft=tex
+autocmd Bufnewfile,Bufread *.tex set ft=tex

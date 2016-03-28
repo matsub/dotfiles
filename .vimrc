@@ -22,7 +22,7 @@ call plug#end()
 "   CONFIGURATIONS FOR PLUGINS
 " -------------------------------
 " auto-ctags
-let g:auto_ctags_filetype_mode = 1
+autocmd Filetype python,c,tex let g:auto_ctags_filetype_mode = 1
 
 " jedi-vim
 autocmd FileType python let b:did_ftplugin = 1
@@ -36,7 +36,7 @@ let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_guide_size=1
 
 " previm
-let g:previm_open_cmd = 'open'
+autocmd Filetype markdown let g:previm_open_cmd = 'open'
 
 " ==========================
 "    EDITOR CONFIGURATION

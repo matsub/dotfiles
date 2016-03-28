@@ -20,8 +20,10 @@ let g:stl_arrow=system("echo -e '\ue0b0'")[:-2]
 let g:stl_rarrow=system("echo -e '\ue0b2'")[:-2]
 
 call statusline#set_color(12, 4)
-autocmd InsertEnter * call statusline#set_color(10, 2)
-autocmd InsertLeave * call statusline#set_color(12, 4)
-autocmd BufEnter * call statusline#read()
-autocmd BufLeave,WinLeave * call statusline#off()
-autocmd BufEnter,WinEnter * call statusline#on()
+augroup statusline
+    autocmd InsertEnter * call statusline#set_color(10, 2)
+    autocmd InsertLeave * call statusline#set_color(12, 4)
+    autocmd BufEnter * call statusline#read()
+    autocmd BufLeave,WinLeave * call statusline#off()
+    autocmd BufEnter,WinEnter * call statusline#on()
+augroup END

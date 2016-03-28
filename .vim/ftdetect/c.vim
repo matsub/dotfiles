@@ -1,1 +1,1 @@
-au Bufnewfile,Bufread *.h set ft=c
+autocmd Bufnewfile,Bufread *.h set ft=c
