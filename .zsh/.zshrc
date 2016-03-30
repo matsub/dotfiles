@@ -50,7 +50,7 @@ else
     PROMPT='%F{yellow}%n %.%f $ '
 fi
 PROMPT2='%_ ... '
-RPROMPT='%1(v|%F{yellow}%1v%f|) %(?, %F{yellow}, %F{red})%*%f'
+RPROMPT='%1(v|%F{yellow}%1v%f|) %y%F{cyan}@%f%(?,%F{green},%F{red})%m%f'
 SPROMPT='%r is correct? [n, y, a, e]: '
 
 
