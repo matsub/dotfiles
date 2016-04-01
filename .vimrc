@@ -18,9 +18,9 @@ Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 filetype plugin indent on
 call plug#end()
 
-" ===============================
-"   CONFIGURATIONS FOR PLUGINS
-" -------------------------------
+" ================================
+"    CONFIGURATIONS FOR PLUGINS
+" --------------------------------
 " auto-ctags
 autocmd Filetype python,c,tex let g:auto_ctags_filetype_mode = 1
 
