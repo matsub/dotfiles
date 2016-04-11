@@ -119,10 +119,6 @@ colorscheme gruvbox
 " =============
 "    MAPPING
 " -------------
-" swap
-nnoremap : ;
-nnoremap ; :
-
 " file open
 nnoremap g<CR> :vertical wincmd f<CR>
 
