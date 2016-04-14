@@ -6,6 +6,7 @@ call plug#begin(expand('~/.vim/bundle/'))
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
 Plug 'soramugi/auto-ctags.vim', {'for': ['python', 'c', 'tex']}
 Plug 'kannokanno/previm', {'for': 'markdown'}
+Plug 'bronson/vim-visual-star-search'
 
 " plugins for appearance
 Plug 'nathanaelkane/vim-indent-guides'
@@ -119,6 +120,9 @@ colorscheme gruvbox
 " =============
 "    MAPPING
 " -------------
+" searching
+nnoremap / /\v
+
 " file open
 nnoremap g<CR> :vertical wincmd f<CR>
 
