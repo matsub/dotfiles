@@ -1,3 +1,4 @@
+export DOTDIR=/Users/matsub/Code/dotfiles
 # path
 fpath=(
 $ZDOTDIR/functions/
