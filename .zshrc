@@ -1,4 +1,4 @@
-export DOTDIR=/Users/matsub/Code/dotfiles
+export ZDOTDIR=$HOME/.zsh
 # path
 fpath=(
 $ZDOTDIR/functions/
