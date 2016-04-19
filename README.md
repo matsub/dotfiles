@@ -3,9 +3,9 @@ installing
 
 ```sh
 # with curl
-curl https://raw.githubusercontent.com/matsub/dotfiles/master/install.sh | sh
+curl -L https://dotfiles.matsub.tech | sh
 # with wget
-wget -qO - https://raw.githubusercontent.com/matsub/dotfiles/master/install.sh | sh
+wget -qO - https://dotfiles.matsub.tech | sh
 ```
 
 uninstalling
