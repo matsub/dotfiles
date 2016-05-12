@@ -159,6 +159,7 @@ nnoremap <F5> :PrevimOpen<CR>
 
 " disable embedded keymaps
 vnoremap K <Nop>
+nnoremap K <Nop>
 nnoremap <Up> <Nop>
 nnoremap <Down> <Nop>
 nnoremap <Right> <Nop>

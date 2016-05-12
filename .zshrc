@@ -87,6 +87,7 @@ alias pip="pip3"
 alias gcc="/opt/homebrew/bin/gcc-5"
 alias dict="python3 ~/Code/sandbox/dictionary/dictionary.py"
 alias stime="/usr/bin/time -p"
+alias reload="exec -l $SHELL"
 
 
 # load functions
