@@ -13,6 +13,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'morhetz/gruvbox'
 
 " plugins for syntax
+Plug 'kevinw/pyflakes-vim', {'for': 'python'}
 Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'scss']}
 Plug 'othree/html5-syntax.vim', {'for': ['html', 'markdown']}
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
@@ -159,6 +160,7 @@ nnoremap <F5> :PrevimOpen<CR>
 
 " disable embedded keymaps
 vnoremap K <Nop>
+nnoremap K <Nop>
 nnoremap <Up> <Nop>
 nnoremap <Down> <Nop>
 nnoremap <Right> <Nop>
