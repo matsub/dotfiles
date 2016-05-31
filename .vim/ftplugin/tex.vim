@@ -1,9 +1,11 @@
 setlocal shiftwidth=2
 setlocal softtabstop=2
+setlocal textwidth=0
 
 setlocal mps+=$:$
 setlocal tags+=tex.tags
 
+setlocal wildignore+=*.aux
 setlocal makeprg=ptex2pdf\ -l\ %
 nnoremap <C-Down> :make<CR><CR><CR>
 

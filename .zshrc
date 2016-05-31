@@ -1,5 +1,7 @@
 export ZDOTDIR=$HOME/.zsh
-# path
+# ==========
+#    PATH
+# ----------
 fpath=(
 $ZDOTDIR/functions/
 $ZDOTDIR/plugins/zsh-completions/src
@@ -7,7 +9,9 @@ $fpath
 )
 typeset -U path cdpath fpath manpath
 
-# complete
+# ================
+#    COMPLETION
+# ----------------
 autoload -U compinit
 compinit -u
 
@@ -16,9 +20,11 @@ zstyle ':completion:*' use-cache yes
 zstyle ':completion:*' verbose yes
 
 
+# ==================
+#    ENVIRONMENTS
+#-------------------
 # encoding
 export LANG=ja_JP.UTF-8
-
 
 # HISTORY
 HISTFILE=~/.zsh_history
@@ -27,20 +33,17 @@ SAVEHIST=500
 setopt hist_ignore_dups
 setopt share_history
 
-
-# HISTORY SHORT CUT
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey '' history-beginning-search-backward-end
 bindkey '' history-beginning-search-forward-end
 
-
 # color
 autoload colors
 # dir simlink sock que exec block char uid gid sticky unwritable
 # a:black b:red c:green d:brown e:blue f:magenta g:cyan h:white x:none
-# uppercase: bold
+# uppercase to bold
 export LSCOLORS=cxfxdxgfbxfxfxdxDxxBxB
 
 # PROMPT
@@ -54,7 +57,6 @@ PROMPT2='%_ ... '
 RPROMPT='%1(v|%F{yellow}%1v%f|) %y%F{cyan}@%f%(?,%F{green},%F{red})%m%f'
 SPROMPT='%r is correct? [n, y, a, e]: '
 
-
 # browsing
 setopt auto_cd
 setopt auto_pushd
@@ -64,7 +66,6 @@ setopt nolistbeep
 setopt nobeep
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' list-colors $LSCOLORS
-
 
 # VCS
 autoload -Uz vcs_info
@@ -76,11 +77,17 @@ precmd () {
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 
+# keybinds
+bindkey '' forward-word
+bindkey '' backward-word
 
-# alias
+
+# ===========
+#    ALIAS
+# -----------
 alias vi="vim"
-alias ll="ls -lG"
-alias la="ls -laG"
+alias ll="ls -l"
+alias la="ls -la"
 alias l="ls -lG"
 alias py="python3"
 alias pip="pip3"
@@ -90,7 +97,9 @@ alias stime="/usr/bin/time -p"
 alias reload="exec -l $SHELL"
 
 
-# load functions
+# ===============
+#    FUNCTIONS
+# ---------------
 # autoload -Uz emacs
 autoload -Uz weather
 
