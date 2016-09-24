@@ -123,6 +123,7 @@ colorscheme gruvbox
 " -------------
 " searching
 nnoremap / /\v
+nnoremap <Down> :noh<CR>
 
 " file open
 nnoremap g<CR> :vertical wincmd f<CR>
@@ -151,7 +152,7 @@ nnoremap ]q :cnext<CR>
 nnoremap [z zk
 nnoremap ]z zj
 
-" command maps
+" command mode
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
@@ -162,7 +163,6 @@ nnoremap <F5> :PrevimOpen<CR>
 vnoremap K <Nop>
 nnoremap K <Nop>
 nnoremap <Up> <Nop>
-nnoremap <Down> <Nop>
 nnoremap <Right> <Nop>
 nnoremap <Left> <Nop>
 nnoremap <S-Up> <Nop>

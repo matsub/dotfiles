@@ -17,6 +17,7 @@ compinit -u
 
 setopt hist_expand
 zstyle ':completion:*' use-cache yes
+zstyle ':completion:*' cache-path ~/.zsh/cache
 zstyle ':completion:*' verbose yes
 
 
@@ -47,12 +48,8 @@ autoload colors
 export LSCOLORS=cxfxdxgfbxfxfxdxDxxBxB
 
 # PROMPT
-if [ -n "$VIMRUNTIME" ];
-then
-    PROMPT='%K{black}%n@vim %.%k $ '
-else
-    PROMPT='%F{yellow}%n %.%f $ '
-fi
+source $ZDOTDIR/plugins/zsh-python-prompt/zshrc.zsh
+PROMPT='%F{yellow}%n %.%f $ '
 PROMPT2='%_ ... '
 RPROMPT='%1(v|%F{yellow}%1v%f|) %y%F{cyan}@%f%(?,%F{green},%F{red})%m%f'
 SPROMPT='%r is correct? [n, y, a, e]: '
@@ -86,8 +83,8 @@ bindkey '' backward-word
 #    ALIAS
 # -----------
 alias vi="vim"
-alias ll="ls -l"
-alias la="ls -la"
+alias ll="ls -lG"
+alias la="ls -lGa"
 alias l="ls -lG"
 alias py="python3"
 alias pip="pip3"
