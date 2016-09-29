@@ -40,6 +40,9 @@ let g:indent_guides_guide_size=1
 " previm
 autocmd Filetype markdown let g:previm_open_cmd = 'open'
 
+" pyflakes-vim
+let g:pyflakes_use_quickfix = 0
+
 " ==========================
 "    EDITOR CONFIGURATION
 " --------------------------
