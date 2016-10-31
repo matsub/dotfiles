@@ -1,0 +1,13 @@
+#!/bin/zsh
+# ===========
+#    ALIAS
+# -----------
+alias vi="vim"
+alias ll="ls -lG"
+alias la="ls -lGa"
+alias l="ls -lG"
+alias py="python"
+alias gcc="/opt/homebrew/bin/gcc-5"
+alias dict="python3 ~/Code/sandbox/dictionary/dictionary.py"
+alias stime="/usr/bin/time -p"
+alias reload="exec -l $SHELL"
