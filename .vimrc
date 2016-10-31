@@ -1,9 +1,11 @@
 " =============
 "    PLUGINS
 " -------------
+let $PATH = "~/.pyenv/shims:".$PATH
 call plug#begin(expand('~/.vim/bundle/'))
 " plugins for system
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
+Plug 'lambdalisue/vim-pyenv', {'for': 'python'}
 Plug 'soramugi/auto-ctags.vim', {'for': ['python', 'c', 'tex']}
 Plug 'kannokanno/previm', {'for': 'markdown'}
 Plug 'bronson/vim-visual-star-search'
@@ -17,6 +19,7 @@ Plug 'kevinw/pyflakes-vim', {'for': 'python'}
 Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'scss']}
 Plug 'othree/html5-syntax.vim', {'for': ['html', 'markdown']}
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
+Plug 'othree/yajs.vim', {'for': 'javascript'}
 filetype plugin indent on
 call plug#end()
 
@@ -41,12 +44,13 @@ let g:indent_guides_guide_size=1
 autocmd Filetype markdown let g:previm_open_cmd = 'open'
 
 " pyflakes-vim
-let g:pyflakes_use_quickfix = 0
+" let g:pyflakes_use_quickfix = 0
 
 " ==========================
 "    EDITOR CONFIGURATION
 " --------------------------
 " editor config
+set clipboard=unnamed
 set nocompatible
 set autoread
 set nobackup
@@ -158,9 +162,6 @@ nnoremap ]z zj
 " command mode
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
-
-" plugins
-nnoremap <F5> :PrevimOpen<CR>
 
 " disable embedded keymaps
 vnoremap K <Nop>
