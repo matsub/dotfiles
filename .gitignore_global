@@ -3,3 +3,4 @@ __pycache__
 *.pyc
 *.swp
 .python-version
+node_modules

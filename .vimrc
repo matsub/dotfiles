@@ -50,7 +50,6 @@ autocmd Filetype markdown let g:previm_open_cmd = 'open'
 "    EDITOR CONFIGURATION
 " --------------------------
 " editor config
-set clipboard=unnamed
 set nocompatible
 set autoread
 set nobackup
