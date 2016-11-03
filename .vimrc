@@ -20,6 +20,7 @@ Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'scss']}
 Plug 'othree/html5-syntax.vim', {'for': ['html', 'markdown']}
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 Plug 'othree/yajs.vim', {'for': 'javascript'}
+Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
 filetype plugin indent on
 call plug#end()
 
