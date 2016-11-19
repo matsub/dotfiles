@@ -10,11 +10,6 @@ if [ -z $DOTDIR ]; then
     # cloning repo
     git clone https://github.com/matsub/dotfiles.git
     pushd dotfiles
-    make filter
-    {
-        echo "export DOTDIR=`pwd`"
-        cat .zshenv 
-    } | tee .zshenv
 else
     # update dotfiles
     pushd $DOTDIR
