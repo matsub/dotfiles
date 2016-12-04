@@ -1,10 +1,3 @@
-[submodule ".zsh/plugins/auto-fu.zsh"]
-	path = .zsh/plugins/auto-fu.zsh
-	url = https://github.com/hchbaw/auto-fu.zsh.git
-	branch = pu
-[submodule ".zsh/plugins/zsh-completions"]
-	path = .zsh/plugins/zsh-completions
-	url = https://github.com/zsh-users/zsh-completions.git
-[submodule ".zsh/plugins/zsh-python-prompt"]
-	path = .zsh/plugins/zsh-python-prompt
-	url = https://github.com/yonchu/zsh-python-prompt.git
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
