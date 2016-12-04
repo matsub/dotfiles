@@ -1,36 +1,44 @@
 #!/bin/zsh
-# ==================
-#    ENVIRONMENTS
-#-------------------
-# encoding
+# ==============
+#    ENCODING
+#---------------
 export LANG=ja_JP.UTF-8
 
-# HISTORY
+# =============
+#    HISTORY
+#--------------
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=500
 setopt hist_ignore_dups
 setopt share_history
 
-# color
+
+# ============
+#    COLORS
+#-------------
 autoload colors
 # dir simlink sock que exec block char uid gid sticky unwritable
 # a:black b:red c:green d:brown e:blue f:magenta g:cyan h:white x:none
 # uppercase to bold
 export LSCOLORS=cxfxdxgfbxfxfxdxDxxBxB
 
-# PROMPT
+
+# ============
+#    PROMPT
+#-------------
 setopt prompt_subst
-source $ZDOTDIR/plugins/zsh-python-prompt/zshrc.zsh
-zstyle ':zsh-python-prompt:pyenv:' symbol ''
 PROMPT='%F{yellow}%n %.%f $ '
 PROMPT2='%_ ... '
 RPROMPT='%1(v|%F{yellow}%1v%f|)'
 RPROMPT+=' %y%F{cyan}@%f%(?,%F{green},%F{red})%m%f'
 RPROMPT+=' [%f%F{blue}${ZSH_PYTHON_PROMPT}%f]'
-SPROMPT='%r is correct? [n, y, a, e]: '
+SPROMPT='You mean %r? [n, y, a, e]: '
 
-# browsing
+
+# ==============
+#    BROWSING
+#---------------
 setopt auto_cd
 setopt auto_pushd
 setopt correct
@@ -40,7 +48,10 @@ setopt nobeep
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' list-colors $LSCOLORS
 
-# VCS
+
+# =========
+#    VCS
+#----------
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '(%b)' # %b: branch information
 zstyle ':vcs_info:*' actionformats '(%b|%a)' # %a: action information
@@ -49,7 +60,3 @@ precmd () {
     LANG=en_US.UTF-8 vcs_info
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
-
-# keybinds
-bindkey '' forward-word
-bindkey '' backward-word

@@ -1,0 +1,15 @@
+#!/bin/zsh
+source $ZPLUG_HOME/init.zsh
+
+zplug "zplug/zplug"
+zplug "yonchu/zsh-python-prompt"
+zplug "hchbaw/auto-fu.zsh", at:pu
+
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+zplug load --verbose

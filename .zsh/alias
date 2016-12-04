@@ -1,9 +1,5 @@
 #!/bin/zsh
-# ===========
-#    ALIAS
-# -----------
 alias vi="vim"
-alias ll="ls -lG"
 alias la="ls -lGa"
 alias l="ls -lG"
 alias py="python"
