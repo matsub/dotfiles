@@ -133,7 +133,8 @@ nnoremap / /\v
 nnoremap <Down> :noh<CR>
 
 " file open
-nnoremap g<CR> :vertical wincmd f<CR>
+nnoremap gv :vertical wincmd f<CR>
+nnoremap gs :wincmd f<CR>
 
 " placeholding
 inoremap <C-j> <Esc>/<++><CR><Esc>cf>
