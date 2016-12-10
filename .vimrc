@@ -58,6 +58,7 @@ set showmatch
 set matchtime=3
 set exrc
 set secure
+set nofixeol
 
 " control codes
 set backspace=indent,eol,start
