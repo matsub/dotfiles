@@ -1,7 +1,7 @@
 #!/bin/zsh
 source $ZPLUG_HOME/init.zsh
 
-zplug "zplug/zplug"
+# zplug "zplug/zplug"
 zplug "yonchu/zsh-python-prompt"
 zplug "hchbaw/auto-fu.zsh", at:pu
 

@@ -1,8 +1,15 @@
 #!/bin/zsh
 alias vi="vim"
-alias la="ls -lGa"
 alias l="ls -lG"
+alias la="ls -lGa"
 alias py="python"
-alias dict="python ~/Code/sandbox/dictionary/dictionary.py"
+
 alias stime="/usr/bin/time -p"
 alias reload="exec -l $SHELL"
+# ignore pyenv config when brew
+case `uname` in
+    'Darwin')
+        alias brew="env PATH=${PATH/${HOME}\/\.pyenv\/shims:/} brew"
+esac
+
+alias dict="python ~/Code/sandbox/dictionary/dictionary.py"

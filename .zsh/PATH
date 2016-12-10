@@ -1,5 +1,5 @@
 #!/bin/zsh
-typeset -U path cdpath fpath manpath
+typeset -U path cdpath fpath manpath PATH
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
