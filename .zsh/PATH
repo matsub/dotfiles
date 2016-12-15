@@ -1,6 +1,14 @@
 #!/bin/zsh
+fpath=(
+$ZPLUG_HOME/repos/zsh-users/zsh-completions/src
+$ZDOTDIR/functions
+$fpath
+)
 typeset -U path cdpath fpath manpath PATH
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+autoload -U compinit
+compinit -u

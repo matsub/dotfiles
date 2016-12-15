@@ -4,6 +4,7 @@ source $ZPLUG_HOME/init.zsh
 # zplug "zplug/zplug"
 zplug "yonchu/zsh-python-prompt"
 zplug "hchbaw/auto-fu.zsh", at:pu
+zplug "zsh-users/zsh-completions"
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
