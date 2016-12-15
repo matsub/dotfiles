@@ -3,6 +3,8 @@ alias vi="vim"
 alias l="ls -lG"
 alias la="ls -lGa"
 alias py="python"
+# see this: http://qiita.com/itkrt2y/items/0671d1f48e66f21241e2
+alias dev='cd $(ghq root)/$(ghq list | fzf)'
 
 alias stime="/usr/bin/time -p"
 alias reload="exec -l $SHELL"
