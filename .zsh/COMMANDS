@@ -1,0 +1,20 @@
+#!/bin/zsh
+alias l="ls -lG"
+alias la="ls -lGa"
+alias vi="vim"
+alias py="python"
+
+alias stime="/usr/bin/time -p"
+alias reload="exec -l $SHELL"
+# brew doctor ignoring pyenv config
+case `uname` in
+    'Darwin')
+        alias brewdoc="env PATH=${PATH/${HOME}\/\.pyenv\/shims:/} brew doctor"
+esac
+
+# ====================
+#    USER FUNCTIONS
+# --------------------
+autoload -Uz dev
+autoload -Uz dict
+autoload -Uz weather

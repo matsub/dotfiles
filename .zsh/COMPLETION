@@ -1,7 +1,4 @@
 #!/bin/zsh
-autoload -U compinit
-compinit -u
-
 # ========================
 #    HISTORY COMPLETION
 # ------------------------

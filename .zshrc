@@ -7,6 +7,6 @@ source $ZDOTDIR/PLUGINS
 source $ZDOTDIR/PLUG-SETTINGS
 
 source $ZDOTDIR/PATH
-source $ZDOTDIR/ALIAS
+source $ZDOTDIR/COMMANDS
 source $ZDOTDIR/ENVIRONMENTS
 source $ZDOTDIR/npm_completion
