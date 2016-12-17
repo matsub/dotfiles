@@ -1,9 +1,10 @@
-setlocal expandtab
-setlocal shiftwidth=4
-setlocal softtabstop=4
+setlocal wildignore=*.o
 
+
+" ================================
+"    CONFIGURATIONS FOR PLUGINS
+" --------------------------------
+" auto-ctags
+" ----------
 setlocal tags+=c.tags
-
-" addreviate
-iab //b /******************************
-iab b// ***************************/
+let g:auto_ctags_filetype_mode = 1
