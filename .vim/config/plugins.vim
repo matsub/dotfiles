@@ -30,6 +30,7 @@ Plug 'flazz/vim-colorschemes'
 "    SYNTAX
 " ------------
 " - python
+Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
 Plug 'kevinw/pyflakes-vim', {'for': 'python'}
 Plug 'lepture/vim-jinja'
 
@@ -64,7 +65,7 @@ let g:indent_guides_guide_size=1
 
 " plugged colorscheme
 " -------------------
-colorscheme gruvbox
+colorscheme alduin
 
 " syntastic
 " ---------
