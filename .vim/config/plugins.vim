@@ -65,7 +65,7 @@ let g:indent_guides_guide_size=1
 
 " plugged colorscheme
 " -------------------
-colorscheme alduin
+colorscheme moonshine
 
 " syntastic
 " ---------
