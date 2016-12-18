@@ -1,6 +1,6 @@
 " ================================
 "    CONFIGURATIONS FOR PLUGINS
 " --------------------------------
-" syntastic
-" ---------
-let g:syntastic_javascript_checkers=['eslint']
+" neomake
+" -------
+let g:neomake_javascript_enabled_makers = ['eslint']

@@ -2,8 +2,7 @@ set makeprg=nosetests
 setlocal wildignore=*.pyc
 
 " call autopep8
-" check this:
-" http://ton-up.net/technote/2013/11/26/vim-python-style-check-and-fix/
+" check this: " http://ton-up.net/technote/2013/11/26/vim-python-style-check-and-fix/
 function! Preserve(command)
     " Save the last search.
     let search = @/
@@ -34,9 +33,9 @@ nnoremap <F5> :call Autopep8()<CR>
 " ================================
 "    CONFIGURATIONS FOR PLUGINS
 " --------------------------------
-" syntastic
-" ---------
-let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+" neomake
+" -------
+let g:neomake_python_enabled_makers = ['pyflakes', 'pep8']
 
 
 " auto-ctags
@@ -48,3 +47,5 @@ let g:auto_ctags_filetype_mode=1
 " jedi-vim
 " --------
 setlocal completeopt-=preview
+let g:jedi#popup_select_first = 0
+let g:jedi#show_call_signatures = "2"

@@ -27,6 +27,8 @@ nnoremap [b :bprev<CR>
 nnoremap ]b :bnext<CR>
 nnoremap [q :cprev<CR>
 nnoremap ]q :cnext<CR>
+nnoremap [l :lprev<CR>
+nnoremap ]l :lnext<CR>
 nnoremap [z zk
 nnoremap ]z zj
 

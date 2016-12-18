@@ -5,7 +5,8 @@ call plug#begin(expand('~/.vim/bundle/'))
 " ------------
 " - global
 Plug 'scrooloose/nerdtree'
-Plug 'vim-syntastic/syntastic'
+Plug 'neomake/neomake'
+            \ | Plug 'benjie/neomake-local-eslint.vim', {'for': 'javascript'}
 Plug 'bronson/vim-visual-star-search'
 Plug 'soramugi/auto-ctags.vim', {'for': ['python','c','tex']}
 
@@ -42,6 +43,9 @@ Plug 'gabrielelana/vim-markdown', {'for': 'markdown'}
 " - ES6
 Plug 'othree/yajs.vim', {'for': 'javascript'}
 Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
+
+" - Haskell
+Plug 'kana/vim-filetype-haskell', {'for': ['haskell']}
 call plug#end()
 filetype plugin indent on
 
@@ -55,6 +59,10 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
+" neomake
+" -------
+autocmd! BufWritePost * Neomake
+
 " vim-indent-guides
 " -----------------
 let g:indent_guides_auto_colors=0
@@ -65,10 +73,4 @@ let g:indent_guides_guide_size=1
 
 " plugged colorscheme
 " -------------------
-colorscheme moonshine
-
-" syntastic
-" ---------
-let g:syntastic_enable_signs = 1
-let g:syntastic_error_symbol = '✗'
-let g:syntastic_warning_symbol = '⚠'
+colorscheme gruvbox
