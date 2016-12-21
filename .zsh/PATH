@@ -1,7 +1,6 @@
 #!/bin/zsh
 fpath=(
 $ZPLUG_HOME/repos/zsh-users/zsh-completions/src
-$ZDOTDIR/zshtools
 $fpath
 )
 typeset -U path cdpath fpath manpath PATH

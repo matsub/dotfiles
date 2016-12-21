@@ -11,10 +11,3 @@ case `uname` in
     'Darwin')
         alias brewdoc="env PATH=${PATH/${HOME}\/\.pyenv\/shims:/} brew doctor"
 esac
-
-# ====================
-#    USER FUNCTIONS
-# --------------------
-autoload -Uz dev
-autoload -Uz dict
-autoload -Uz weather

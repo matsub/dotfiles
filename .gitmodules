@@ -5,6 +5,3 @@
 	path = .zsh/zplug
 	url = https://github.com/zplug/zplug.git
     ignore = dirty
-[submodule ".zsh/zshtools"]
-	path = .zsh/zshtools
-	url = https://matsub@bitbucket.org/matsub/zshtools.git
