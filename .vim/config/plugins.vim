@@ -16,6 +16,7 @@ Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
 " - markdown
 Plug 'kannokanno/previm', {'for': 'markdown'}
+Plug 'godlygeek/tabular', {'for': 'markdown'}
 
 
 " ================
@@ -38,7 +39,7 @@ Plug 'lepture/vim-jinja'
 " - html5 & css3 & markdown
 Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'scss']}
 Plug 'othree/html5-syntax.vim', {'for': ['html', 'markdown']}
-Plug 'gabrielelana/vim-markdown', {'for': 'markdown'}
+Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
 Plug 'othree/yajs.vim', {'for': 'javascript'}

@@ -1,3 +1,6 @@
+nnoremap <F7> :TableFormat<CR>
+
+
 " ================================
 "    CONFIGURATIONS FOR PLUGINS
 " --------------------------------
@@ -8,4 +11,8 @@ nnoremap <F5> :PrevimOpen<CR>
 
 " vim-markdown
 " ------------
+set spelllang=en,cjk
+
 let g:markdown_enable_folding = 1
+let g:vim_markdown_math = 1
+let g:vim_markdown_frontmatter = 1
