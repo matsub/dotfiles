@@ -67,5 +67,5 @@ precmd () {
 # --------------
 case `uname` in
     'Darwin')
-        export HOMEBREW_CASK_OPTS="--caskroom=/opt/homebrew-cask/Caskroom"
+        export HOMEBREW_CASK_OPTS="--caskroom=/usr/local/Caskroom"
 esac
