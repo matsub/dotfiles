@@ -25,6 +25,3 @@ curl -fLo .vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com
 vim +PlugInstall +qall
 
 popd
-
-# python
-git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
