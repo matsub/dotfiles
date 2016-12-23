@@ -5,5 +5,7 @@ export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+eval "$(docker-machine env docker)"
+
 autoload -U compinit
 compinit -u
