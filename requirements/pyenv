@@ -13,4 +13,3 @@ Pillow==3.3.1
 pymongo==3.3.0
 readline==6.2.4.1
 tox==2.5.0
-virtualenv==15.1.0

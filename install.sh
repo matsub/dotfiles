@@ -1,10 +1,10 @@
 #!/bin/sh
 
 if [ -z $DOTDIR ]; then
-    # install git at first
+    # install package manager at first
     case `uname` in
         'Darwin')
-            curl -f https://raw.githubusercontent.com/matsub/dotfiles/master/brew/install.sh | sh || exit $?
+            curl -f https://raw.githubusercontent.com/matsub/dotfiles/master/requirements/brew/install.sh | sh || exit $?
     esac
 
     # cloning repo
@@ -23,13 +23,6 @@ git submodule update
 
 curl -fLo .vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
-
-case `uname` in
-    'Darwin')
-        pushd brew
-        brew bundle
-        popd;;
-esac
 
 popd
 
