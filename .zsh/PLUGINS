@@ -5,10 +5,8 @@ source $ZPLUG_HOME/init.zsh
 # completions
 zplug "zsh-users/zsh-completions"
 zplug "felixr/docker-zsh-completion"
-# auto expansion
+# incremental search
 zplug "hchbaw/auto-fu.zsh", at:pu
-# pyenv
-zplug "yonchu/zsh-python-prompt"
 # bunch of tools
 zplug "matsub/zshtools", from:bitbucket
 

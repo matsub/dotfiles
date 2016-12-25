@@ -9,9 +9,3 @@ zle -N zle-line-init
 
 # hide "-azfu-"
 zstyle ':auto-fu:var' postdisplay $''
-
-
-# =======================
-#    zsh-python-prompt
-# -----------------------
-zstyle ':zsh-python-prompt:pyenv:' symbol ''

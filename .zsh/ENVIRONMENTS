@@ -32,7 +32,6 @@ PROMPT='%F{yellow}%n %.%f $ '
 PROMPT2='%_ ... '
 RPROMPT='%1(v|%F{yellow}%1v%f|)'
 RPROMPT+=' %y%F{cyan}@%f%(?,%F{green},%F{red})%m%f'
-RPROMPT+=' [%f%F{blue}${ZSH_PYTHON_PROMPT}%f]'
 SPROMPT='You mean %r? [n, y, a, e]: '
 
 
