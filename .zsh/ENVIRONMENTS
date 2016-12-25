@@ -48,6 +48,12 @@ setopt nobeep
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' list-colors $LSCOLORS
 
+# divide words with /
+autoload -Uz select-word-style
+select-word-style default
+zstyle ':zle:*' word-chars " /=;@:{},|"
+zstyle ':zle:*' word-style unspecified
+
 
 # =========
 #    VCS
