@@ -1,7 +1,7 @@
 #!/bin/zsh
-# ========================
-#    HISTORY COMPLETION
-# ------------------------
+# ====================
+#    HISTORY SEARCH
+# --------------------
 setopt hist_expand
 setopt hist_ignore_all_dups
 setopt hist_reduce_blanks
@@ -9,12 +9,21 @@ setopt hist_no_store
 setopt hist_verify
 setopt share_history
 setopt append_history
-zstyle ':completion:*' use-cache yes
-zstyle ':completion:*' cache-path ~/.zsh/cache
-zstyle ':completion:*' verbose yes
 
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "" history-beginning-search-backward-end
 bindkey "" history-beginning-search-forward-end
+
+# =================
+#    COMPLETIONS
+# -----------------
+zstyle ':completion:*' use-cache yes
+zstyle ':completion:*' cache-path ~/.zsh/cache
+zstyle ':completion:*' verbose yes
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*' list-colors $LSCOLORS
+
+autoload -U compinit
+compinit -u

@@ -45,8 +45,6 @@ setopt correct
 setopt list_packed
 setopt nolistbeep
 setopt nobeep
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-zstyle ':completion:*' list-colors $LSCOLORS
 
 # divide words with /
 autoload -Uz select-word-style

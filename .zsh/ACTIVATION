@@ -4,6 +4,3 @@ typeset -U path cdpath fpath manpath PATH
 export PATH="$(anyenv root)/bin:$PATH"
 eval "$(anyenv init -)"
 eval "$(docker-machine env docker)"
-
-autoload -U compinit
-compinit -u
