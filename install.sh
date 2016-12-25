@@ -21,7 +21,26 @@ python deploy.py
 git submodule init
 git submodule update
 
+
+# ============================
+#    INSTALL BASIC PACKAGES
+# ----------------------------
+case `uname` in
+    'Darwin')
+        pushd requirements/brew
+        brew bundle
+        popd
+esac
+
 curl -fLo .vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
+
+# INSTALL **env
+# --------------
+anyenv install pyenv
+anyenv install rbenv
+# pyenv-virtualenv
+git clone https://github.com/yyuu/pyenv-virtualenv.git \
+    $(anyenv root)/envs/pyenv/plugins/pyenv-virtualenv
 
 popd
