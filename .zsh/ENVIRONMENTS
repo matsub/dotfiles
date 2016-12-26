@@ -68,7 +68,4 @@ precmd () {
 # ==============
 #    HOMEBREW
 # --------------
-case `uname` in
-    'Darwin')
-        export HOMEBREW_CASK_OPTS="--caskroom=/usr/local/Caskroom"
-esac
+export HOMEBREW_CASK_OPTS="--caskroom=/usr/local/Caskroom"
