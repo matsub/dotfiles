@@ -1,6 +1,18 @@
+# ignore system files of Mac
 .DS_Store
-__pycache__
-*.pyc
+
+# ignore swap files of Vim
 *.swp
+
+# ignore system files of Python
+*.pyc
+__pycache__
 .python-version
+
+# ignore system files of npm
 node_modules
+
+# for ruby
+Gemfile.lock
+vendor
+.bundle
