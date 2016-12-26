@@ -1,6 +1,7 @@
 #!/bin/zsh
 typeset -U path cdpath fpath manpath PATH
 
+export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
 # additional environment managers
