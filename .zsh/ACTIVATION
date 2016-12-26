@@ -2,7 +2,6 @@
 typeset -U path cdpath fpath manpath PATH
 
 eval "$(anyenv init -)"
-eval "$(docker-machine env docker)"
 
 # additional environment managers
 eval "$(pyenv virtualenv-init -)"
