@@ -16,8 +16,6 @@ set makeprg=make
 set showmatch
 set matchtime=3
 
-" won't fix EOL
-set nofixeol
 " allow backspacing over,
 "   - indent: autoindent
 "   - eol   : line breaks
