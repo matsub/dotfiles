@@ -15,4 +15,5 @@ set display=lastline
 " ==================
 "    COLOR THEMES
 " ------------------
+set bg=dark
 set t_Co=256
