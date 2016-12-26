@@ -16,10 +16,11 @@ else
     git pull origin master:master
 fi
 
-python deploy.py
-
 git submodule init
 git submodule update
+
+python deploy.py
+ln -s ~/.zshrc .zshrc
 
 
 # ============================
