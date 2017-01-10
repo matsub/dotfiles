@@ -1,4 +1,3 @@
-let $PATH = "~/.pyenv/shims:".$PATH
 call plug#begin(expand('~/.vim/bundle/'))
 " ============
 "    SYSTEM
@@ -33,7 +32,6 @@ Plug 'flazz/vim-colorschemes'
 " ------------
 " - python
 Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
-Plug 'kevinw/pyflakes-vim', {'for': 'python'}
 Plug 'lepture/vim-jinja'
 
 " - html5 & css3 & markdown
