@@ -8,11 +8,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'neomake/neomake'
             \ | Plug 'benjie/neomake-local-eslint.vim', {'for': 'javascript'}
 Plug 'bronson/vim-visual-star-search'
-Plug 'soramugi/auto-ctags.vim', {'for': ['python','c','tex']}
 
 " - python
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
-            \ | Plug 'lambdalisue/vim-pyenv', {'for': 'python'}
 
 " - markdown
 Plug 'kannokanno/previm', {'for': 'markdown'}
