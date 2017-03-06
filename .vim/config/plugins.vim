@@ -4,6 +4,7 @@ call plug#begin(expand('~/.vim/bundle/'))
 " ------------
 " - global
 Plug 'scrooloose/nerdtree'
+            \ | Plug 'jistr/vim-nerdtree-tabs'
 Plug 'neomake/neomake'
             \ | Plug 'benjie/neomake-local-eslint.vim', {'for': 'javascript'}
 Plug 'bronson/vim-visual-star-search'
@@ -60,9 +61,8 @@ filetype plugin indent on
 " --------------------------------
 " NERDTree
 " --------
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-nnoremap <silent><C-e> :NERDTreeToggle<CR>
+nnoremap <silent><C-e> :NERDTreeTabsToggle<CR>
+let g:nerdtree_tabs_open_on_console_startup=2
 
 " neomake
 " -------
