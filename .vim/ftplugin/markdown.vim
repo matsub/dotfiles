@@ -1,3 +1,4 @@
+setlocal textwidth=80
 nnoremap <F7> :TableFormat<CR>
 
 

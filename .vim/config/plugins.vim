@@ -12,6 +12,9 @@ Plug 'bronson/vim-visual-star-search'
 " - python
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
+" - javascript
+Plug '1995eaton/vim-better-javascript-completion', {'for': 'javascript'}
+
 " - markdown
 Plug 'kannokanno/previm', {'for': 'markdown'}
 Plug 'godlygeek/tabular', {'for': 'markdown'}
@@ -37,13 +40,15 @@ Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
 Plug 'lepture/vim-jinja'
 
 " - html5 & css3 & markdown
-Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'scss']}
-Plug 'othree/html5-syntax.vim', {'for': ['html', 'markdown']}
+Plug 'hail2u/vim-css3-syntax', {'for': 'css'}
+Plug 'othree/html5-syntax.vim', {'for': 'html'}
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
 Plug 'othree/yajs.vim', {'for': 'javascript'}
 Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
+" --- Vue.js
+Plug 'posva/vim-vue'
 
 " - Haskell
 Plug 'kana/vim-filetype-haskell', {'for': 'haskell'}
