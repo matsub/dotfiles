@@ -3,7 +3,7 @@ typeset -U path cdpath fpath manpath PATH
 export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 
 eval "$(anyenv init -)"
-# eval "$(docker-machine env docker)"
+eval "$(docker-machine env docker)"
 
 # additional environment managers
 eval "$(pyenv virtualenv-init -)"
