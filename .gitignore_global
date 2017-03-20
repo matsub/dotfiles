@@ -13,3 +13,6 @@ node_modules
 Gemfile.lock
 vendor
 .bundle
+
+# for CI
+.wercker
