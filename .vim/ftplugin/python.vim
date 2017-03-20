@@ -38,14 +38,8 @@ nnoremap <F5> :call Autopep8()<CR>
 let g:neomake_python_enabled_makers = ['pyflakes', 'pep8']
 
 
-" auto-ctags
-" ----------
-setlocal tags+=python.tags
-let g:auto_ctags_filetype_mode=1
-
-
 " jedi-vim
 " --------
 setlocal completeopt-=preview
 let g:jedi#popup_select_first = 0
-let g:jedi#show_call_signatures = "2"
+let g:jedi#show_call_signatures = "0"
