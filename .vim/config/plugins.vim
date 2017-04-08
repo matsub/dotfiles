@@ -17,6 +17,9 @@ Plug 'davidhalter/jedi-vim', {'for': 'python'}
 Plug 'kannokanno/previm', {'for': 'markdown'}
 Plug 'godlygeek/tabular', {'for': 'markdown'}
 
+" - sequence diagram
+Plug 'xavierchow/vim-sequence-diagram', {'for': 'sequence'}
+
 
 " ================
 "    APPEARANCE
@@ -44,7 +47,10 @@ Plug 'othree/yajs.vim', {'for': 'javascript'}
 Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
 
 " - Haskell
-Plug 'kana/vim-filetype-haskell', {'for': ['haskell']}
+Plug 'kana/vim-filetype-haskell', {'for': 'haskell'}
+
+" - uiflow
+Plug 'matsub/uiflow.vim'
 call plug#end()
 filetype plugin indent on
 

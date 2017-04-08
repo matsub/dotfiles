@@ -13,6 +13,6 @@ nnoremap <F5> :PrevimOpen<CR>
 " ------------
 set spelllang=en,cjk
 
-let g:markdown_enable_folding = 1
+let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_math = 1
 let g:vim_markdown_frontmatter = 1
