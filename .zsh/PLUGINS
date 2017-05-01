@@ -4,7 +4,6 @@ source $ZPLUG_HOME/init.zsh
 # zplug "zplug/zplug"
 # completions
 zplug "zsh-users/zsh-completions"
-zplug "felixr/docker-zsh-completion"
 zplug "maxmellon/yarn_completion"
 # incremental search
 zplug "hchbaw/auto-fu.zsh", at:pu
