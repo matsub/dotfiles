@@ -5,3 +5,4 @@ augroup EXCLUDING_MARKDOWN
 augroup END
 
 setlocal mps+=<:>
+let g:neomake_html_enabled_makers = []
