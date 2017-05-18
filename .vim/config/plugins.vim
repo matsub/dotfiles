@@ -5,7 +5,6 @@ call plug#begin(expand('~/.vim/bundle/'))
 " - global
 Plug 'scrooloose/nerdtree'
 Plug 'neomake/neomake'
-            \ | Plug 'benjie/neomake-local-eslint.vim', {'for': 'javascript'}
 Plug 'bronson/vim-visual-star-search'
 Plug 'soramugi/auto-ctags.vim', {'for': ['python','c','tex']}
 
@@ -44,13 +43,17 @@ Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
 Plug 'othree/yajs.vim', {'for': 'javascript'}
-Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
+" --- Vue.js
+Plug 'posva/vim-vue'
 
 " - Haskell
 Plug 'kana/vim-filetype-haskell', {'for': 'haskell'}
 
 " - uiflow
 Plug 'matsub/uiflow.vim'
+
+" - nginx
+Plug 'vim-scripts/nginx.vim'
 call plug#end()
 filetype plugin indent on
 
