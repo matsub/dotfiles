@@ -35,6 +35,7 @@ Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
+Plug 'pangloss/vim-javascript', {'for': ['javascript', 'vue']}
 " --- Vue.js
 Plug 'posva/vim-vue'
 call plug#end()
