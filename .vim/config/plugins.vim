@@ -5,20 +5,14 @@ call plug#begin(expand('~/.vim/bundle/'))
 " - global
 Plug 'scrooloose/nerdtree'
 Plug 'neomake/neomake'
-            \ | Plug 'benjie/neomake-local-eslint.vim', {'for': 'javascript'}
 Plug 'bronson/vim-visual-star-search'
-Plug 'soramugi/auto-ctags.vim', {'for': ['python','c','tex']}
 
 " - python
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
-            \ | Plug 'lambdalisue/vim-pyenv', {'for': 'python'}
 
 " - markdown
 Plug 'kannokanno/previm', {'for': 'markdown'}
 Plug 'godlygeek/tabular', {'for': 'markdown'}
-
-" - sequence diagram
-Plug 'xavierchow/vim-sequence-diagram', {'for': 'sequence'}
 
 
 " ================
@@ -35,22 +29,13 @@ Plug 'flazz/vim-colorschemes'
 " ------------
 " - python
 Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
-Plug 'lepture/vim-jinja'
 
 " - html5 & css3 & markdown
-Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'scss']}
-Plug 'othree/html5-syntax.vim', {'for': ['html', 'markdown']}
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
-Plug 'othree/yajs.vim', {'for': 'javascript'}
-Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
-
-" - Haskell
-Plug 'kana/vim-filetype-haskell', {'for': 'haskell'}
-
-" - uiflow
-Plug 'matsub/uiflow.vim'
+" --- Vue.js
+Plug 'posva/vim-vue'
 call plug#end()
 filetype plugin indent on
 
