@@ -6,7 +6,6 @@ call plug#begin(expand('~/.vim/bundle/'))
 Plug 'scrooloose/nerdtree'
 Plug 'neomake/neomake'
 Plug 'bronson/vim-visual-star-search'
-Plug 'soramugi/auto-ctags.vim', {'for': ['python','c','tex']}
 
 " - python
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
@@ -37,12 +36,12 @@ Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
 Plug 'lepture/vim-jinja'
 
 " - html5 & css3 & markdown
-Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'scss']}
-Plug 'othree/html5-syntax.vim', {'for': ['html', 'markdown']}
+Plug 'hail2u/vim-css3-syntax', {'for': ['css', 'scss', 'vue']}
+Plug 'othree/html5-syntax.vim', {'for': ['html', 'markdown', 'vue']}
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
-Plug 'othree/yajs.vim', {'for': 'javascript'}
+Plug 'othree/yajs.vim', {'for': ['javascript', 'vue']}
 " --- Vue.js
 Plug 'posva/vim-vue'
 
