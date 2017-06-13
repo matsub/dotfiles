@@ -3,7 +3,7 @@ call plug#begin(expand('~/.vim/bundle/'))
 "    SYSTEM
 " ------------
 " - global
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree' | Plug 'jistr/vim-nerdtree-tabs'
 Plug 'neomake/neomake'
 Plug 'bronson/vim-visual-star-search'
 
