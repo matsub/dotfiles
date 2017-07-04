@@ -7,3 +7,4 @@ alias tk="tmux kill-session -t"
 
 alias stime="/usr/bin/time -p"
 alias reload="exec -l $SHELL"
+alias randgen="openssl rand -base64"
