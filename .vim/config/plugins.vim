@@ -3,7 +3,7 @@ call plug#begin(expand('~/.vim/bundle/'))
 "    SYSTEM
 " ------------
 " - global
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree' | Plug 'jistr/vim-nerdtree-tabs'
 Plug 'neomake/neomake'
 Plug 'bronson/vim-visual-star-search'
 
@@ -34,10 +34,10 @@ Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
+Plug 'pangloss/vim-javascript', {'for': ['javascript', 'html', 'vue']}
 " --- Vue.js
 Plug 'posva/vim-vue'
 call plug#end()
-filetype plugin indent on
 
 
 " ================================
