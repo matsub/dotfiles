@@ -7,5 +7,7 @@ alias tk="tmux kill-session -t"
 
 alias stime="/usr/bin/time -p"
 alias reload="exec -l $SHELL"
+alias randgen="openssl rand -base64"
+
 # brew doctor ignoring pyenv config
 alias brewdoc="env PATH=${PATH/${HOME}\/\.pyenv\/shims:/} brew doctor"
