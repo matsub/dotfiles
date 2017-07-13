@@ -29,14 +29,15 @@ Plug 'flazz/vim-colorschemes'
 " ------------
 " - python
 Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
+"   - jinja
+Plug 'lepture/vim-jinja', {'for': ['html', 'jinja']}
 
 " - html5 & css3 & markdown
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
-Plug 'pangloss/vim-javascript', {'for': ['javascript', 'html', 'vue']}
-" --- Vue.js
-Plug 'posva/vim-vue'
+Plug 'othree/yajs', {'for': ['javascript', 'html']}
+Plug 'othree/es.next.syntax.vim', {'for': ['javascript', 'html']}
 call plug#end()
 
 
