@@ -32,6 +32,9 @@ Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
 "   - jinja
 Plug 'lepture/vim-jinja', {'for': ['html', 'jinja']}
 
+" - elixir
+Plug 'elixir-lang/vim-elixir'
+
 " - html5 & css3 & markdown
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
