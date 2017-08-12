@@ -13,11 +13,5 @@ uninstalling
 
 ### unlink
 ```sh
-python deploy.py unlink
-```
-
-### remove dotfiles
-```sh
-cd $DOTDIR/..
-rm -rf dotfiles
+./uninstall.sh
 ```
