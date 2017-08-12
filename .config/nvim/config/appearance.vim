@@ -21,4 +21,3 @@ colorscheme industry
 "    DRAWING
 " -------------
 set nocursorline
-set lazyredraw
