@@ -10,6 +10,12 @@ Plug 'bronson/vim-visual-star-search'
 " - python
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
+" - go
+Plug 'fatih/vim-go', {'for': 'go'}
+
+" - javascript
+Plug 'ternjs/tern_for_vim', {'for': 'javascript', 'do': 'npm install'}
+
 " - markdown
 Plug 'kannokanno/previm', {'for': 'markdown'}
 Plug 'godlygeek/tabular', {'for': 'markdown'}
