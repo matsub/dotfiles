@@ -27,7 +27,7 @@ Plug 'godlygeek/tabular', {'for': 'markdown'}
 Plug 'https://bitbucket.org/matsub/vim-statusline.git'
 Plug 'https://bitbucket.org/matsub/vim-binary.git'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'flazz/vim-colorschemes'
+Plug 'morhetz/gruvbox'
 
 
 " ============
