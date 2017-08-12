@@ -1,4 +1,8 @@
 runtime! config/system.vim
 runtime! config/appearance.vim
 runtime! config/keybinding.vim
-runtime! config/plugins.vim
+
+if has('nvim')
+    runtime! config/plugins.vim
+    runtime! config/neoshit.vim
+endif

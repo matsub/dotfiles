@@ -5,6 +5,8 @@ setlocal omnifunc=javascriptcomplete#CompleteJS
 " ================================
 "    CONFIGURATIONS FOR PLUGINS
 " --------------------------------
-" neomake
-" -------
-let g:neomake_javascript_enabled_makers = ['eslint']
+if has('nvim')
+    " neomake
+    " -------
+    let g:neomake_javascript_enabled_makers = ['eslint']
+endif

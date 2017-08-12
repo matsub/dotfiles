@@ -17,3 +17,4 @@ set display=lastline
 " ------------------
 set bg=dark
 set t_Co=256
+colorscheme industry
