@@ -36,7 +36,7 @@ Plug 'morhetz/gruvbox'
 " - python
 Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
 "   - jinja
-Plug 'lepture/vim-jinja', {'for': ['html', 'jinja']}
+Plug 'lepture/vim-jinja'
 
 " - elixir
 Plug 'elixir-lang/vim-elixir'
@@ -45,8 +45,9 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
-Plug 'othree/yajs', {'for': ['javascript', 'html']}
-Plug 'othree/es.next.syntax.vim', {'for': ['javascript', 'html']}
+Plug 'othree/yajs'
+" --- vue.js
+Plug 'posva/vim-vue', {'for': 'vue'}
 call plug#end()
 
 

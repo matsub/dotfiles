@@ -1,1 +1,1 @@
-autocmd Bufnewfile,Bufread *.vue set ft=html
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
