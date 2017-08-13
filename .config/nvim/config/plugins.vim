@@ -32,13 +32,14 @@ Plug 'morhetz/gruvbox'
 " ------------
 " - python
 Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
+Plug 'othree/html5.vim'
 
 " - html5 & css3 & markdown
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
 Plug 'othree/yajs'
-Plug '1995eaton/vim-better-javascript-completion', {'for': 'javascript'}
+Plug 'matsub/vim-better-javascript-completion', {'for': 'javascript'}
 call plug#end()
 
 
