@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "emojipacks": "^0.0.5",
+    "eslint": "^3.15.0",
+    "sacloud": "^0.0.16",
+    "uiflow": "^1.1.8",
+    "vue-cli": "^2.8.1"
+  }
+}

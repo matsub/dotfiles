@@ -1,7 +1,7 @@
 #!/bin/zsh
 alias l="ls -lG"
 alias la="ls -lGa"
-alias vi="vim"
+alias vi="nvim"
 alias py="python"
 alias tk="tmux kill-session -t"
 

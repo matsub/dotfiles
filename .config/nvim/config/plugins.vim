@@ -13,9 +13,6 @@ Plug 'davidhalter/jedi-vim', {'for': 'python'}
 " - go
 Plug 'fatih/vim-go', {'for': 'go'}
 
-" - javascript
-Plug 'ternjs/tern_for_vim', {'for': 'javascript', 'do': 'npm install'}
-
 " - markdown
 Plug 'kannokanno/previm', {'for': 'markdown'}
 Plug 'godlygeek/tabular', {'for': 'markdown'}
@@ -27,7 +24,7 @@ Plug 'godlygeek/tabular', {'for': 'markdown'}
 Plug 'https://bitbucket.org/matsub/vim-statusline.git'
 Plug 'https://bitbucket.org/matsub/vim-binary.git'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'flazz/vim-colorschemes'
+Plug 'morhetz/gruvbox'
 
 
 " ============
@@ -35,18 +32,13 @@ Plug 'flazz/vim-colorschemes'
 " ------------
 " - python
 Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
-"   - jinja
-Plug 'lepture/vim-jinja', {'for': ['html', 'jinja']}
-
-" - elixir
-Plug 'elixir-lang/vim-elixir'
 
 " - html5 & css3 & markdown
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
-Plug 'othree/yajs', {'for': ['javascript', 'html']}
-Plug 'othree/es.next.syntax.vim', {'for': ['javascript', 'html']}
+Plug 'othree/yajs'
+Plug '1995eaton/vim-better-javascript-completion', {'for': 'javascript'}
 call plug#end()
 
 
