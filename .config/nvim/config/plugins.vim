@@ -39,7 +39,7 @@ Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
 Plug 'othree/yajs'
-Plug 'matsub/vim-better-javascript-completion', {'for': 'javascript'}
+Plug 'https://matsub@bitbucket.org/teramako/jscomplete-vim.git'
 call plug#end()
 
 
