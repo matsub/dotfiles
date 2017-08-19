@@ -1,5 +1,4 @@
 setlocal textwidth=80
-nnoremap <F7> :TableFormat<CR>
 
 
 " ================================
@@ -10,6 +9,10 @@ if has('nvim')
     " ------
     let g:previm_open_cmd = 'open'
     nnoremap <F5> :PrevimOpen<CR>
+
+    " tabular
+    " -------
+    nnoremap <F7> :TableFormat<CR>
 
     " vim-markdown
     " ------------
