@@ -10,6 +10,7 @@ __pycache__
 .python-version
 
 # ignore system files of npm
+yarn.lock
 node_modules
 
 # for ruby
