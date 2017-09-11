@@ -1,10 +1,11 @@
 #!/bin/zsh
 typeset -U path cdpath fpath manpath PATH
-export PATH="$PATH:$XDG_CONFIG_HOME/yarn/global/node_modules/.bin"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$XDG_CONFIG_HOME/yarn/global/node_modules/.bin:$GOPATH/bin"
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
 
 eval "$(anyenv init -)"
-eval "$(docker-machine env docker)"
+# eval "$(docker-machine env docker)"
 
 # additional environment managers
 eval "$(pyenv virtualenv-init -)"
