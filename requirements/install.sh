@@ -7,6 +7,7 @@ if [ $(uname) = "Darwin" ];then
     # install formulas
     pushd brew
     brew bundle
+    popd
 fi
 
 #   neovim-plug
