@@ -5,7 +5,8 @@ if [ $(uname) = "Darwin" ];then
     # install Homebrew
     sh brew/install.sh
     # install formulas
-    brew brew/bundle
+    pushd brew
+    brew bundle
 fi
 
 #   neovim-plug
