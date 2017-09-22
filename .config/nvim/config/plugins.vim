@@ -11,7 +11,7 @@ Plug 'bronson/vim-visual-star-search'
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
 " - go
-Plug 'fatih/vim-go', {'for': 'go'}
+Plug 'fatih/vim-go', {'for': 'go'} | Plug 'jodosha/vim-godebug'
 
 " - markdown
 Plug 'kannokanno/previm', {'for': 'markdown'}
