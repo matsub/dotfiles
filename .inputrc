@@ -1,3 +1,6 @@
 set completion-ignore-case on
 set editing-mode vi
 set keymap vi-command
+
+"\C-n":history-search-forward
+"\C-p":history-search-backward

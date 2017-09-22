@@ -39,6 +39,9 @@ Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
 
 " - ES6
 Plug 'othree/yajs'
+
+" - fish
+Plug 'aliva/vim-fish'
 call plug#end()
 
 
