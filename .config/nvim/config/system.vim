@@ -3,6 +3,11 @@
 " ------------
 " GENERAL BEHAVIOR
 " ----------------
+" disable fxxh
+if &shell =~# 'bin/fish$'
+    set shell=/bin/bash
+endif
+
 " make behavior more Vim-friendly
 set nocompatible
 
