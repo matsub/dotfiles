@@ -11,7 +11,7 @@ alias py="python"
 alias tk="tmux kill-session -t"
 
 alias stime="/usr/bin/time -p"
-alias reload=". .config/fish/config.fish"
+alias reload=". $XDG_CONFIG_HOME/fish/config.fish"
 alias randgen="openssl rand -base64"
 
 fish_default_key_bindings
