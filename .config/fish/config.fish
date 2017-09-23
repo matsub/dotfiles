@@ -17,6 +17,7 @@ alias randgen="openssl rand -base64"
 fish_default_key_bindings
 
 anyenv init - fish > tmp
+sed -e 's/export \(.*\)=/set -gx \1 /' -e 's/:\${\(.*\)}\"/\" \$\1/' tmp > tmp
 source tmp
 rm tmp
 eval (docker-machine env docker)
