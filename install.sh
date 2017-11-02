@@ -13,6 +13,7 @@ git submodule init
 git submodule update
 
 python deploy.py
+source ~/.zshrc
 
 
 # ============================
