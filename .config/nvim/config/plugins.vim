@@ -4,8 +4,8 @@ call plug#begin(expand('~/.vim/bundle/'))
 " ------------
 " - global
 Plug 'scrooloose/nerdtree' | Plug 'jistr/vim-nerdtree-tabs'
-Plug 'neomake/neomake'
 Plug 'bronson/vim-visual-star-search'
+Plug 'w0rp/ale'
 
 " - python
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
@@ -53,9 +53,12 @@ call plug#end()
 nnoremap <silent><C-e> :NERDTreeTabsToggle<CR>
 let g:nerdtree_tabs_open_on_console_startup=2
 
-" neomake
-" -------
-autocmd! BufWritePost * Neomake
+" ale
+" ---
+let g:ale_linters = {
+            \'vue': ['eslint'],
+            \'html': [],
+            \}
 
 " vim-indent-guides
 " -----------------

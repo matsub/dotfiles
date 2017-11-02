@@ -34,11 +34,6 @@ nnoremap <F5> :call Autopep8()<CR>
 "    CONFIGURATIONS FOR PLUGINS
 " --------------------------------
 if has('nvim')
-    " neomake
-    " -------
-    let g:neomake_python_enabled_makers = ['pyflakes', 'pep8']
-
-
     " jedi-vim
     " --------
     setlocal completeopt-=preview
