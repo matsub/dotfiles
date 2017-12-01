@@ -59,6 +59,8 @@ let g:ale_linters = {
             \'vue': ['eslint'],
             \'html': [],
             \}
+nmap <silent> <C-p> <Plug>(ale_previous_wrap)
+nmap <silent> <C-n> <Plug>(ale_next_wrap)
 
 " vim-indent-guides
 " -----------------
