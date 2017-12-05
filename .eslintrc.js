@@ -2,8 +2,8 @@
 
 module.exports = {
   // add your custom rules here
-  'env': {
-    'es6': true
+  'parserOptions': {
+    'ecmaVersion': 8 // or 2017
   },
   'rules': {
     // allow paren-less arrow functions
