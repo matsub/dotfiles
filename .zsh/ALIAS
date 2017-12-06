@@ -6,6 +6,12 @@ alias vim="nvim"
 alias py="python"
 alias tk="tmux kill-session -t"
 
+# CLI chrome
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
+alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
+
+# tools
 alias stime="/usr/bin/time -p"
 alias reload="exec -l $SHELL"
 alias randgen="openssl rand -base64"
