@@ -12,6 +12,7 @@ __pycache__
 # ignore system files of npm
 yarn.lock
 node_modules
+.cache
 
 # for ruby
 Gemfile.lock

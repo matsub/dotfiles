@@ -6,6 +6,7 @@ call plug#begin(expand('~/.vim/bundle/'))
 Plug 'scrooloose/nerdtree' | Plug 'jistr/vim-nerdtree-tabs'
 Plug 'bronson/vim-visual-star-search'
 Plug 'w0rp/ale'
+Plug 'sbdchd/vim-shebang'
 
 " - python
 Plug 'davidhalter/jedi-vim', {'for': 'python'}
@@ -61,6 +62,14 @@ let g:ale_linters = {
             \}
 nmap <silent> <C-p> <Plug>(ale_previous_wrap)
 nmap <silent> <C-n> <Plug>(ale_next_wrap)
+
+" ale
+" ---
+
+let g:shebang#shebangs = {
+            \ 'python': '#!/bin/python',
+            \ 'sh': '#!/bin/sh'
+            \ }
 
 " vim-indent-guides
 " -----------------
