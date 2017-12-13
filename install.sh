@@ -22,11 +22,12 @@ pushd requirements
 sh install.sh
 popd
 
-
 # change login shell to zsh
-chsh -s /bin/zsh
 echo "export DOTDIR=`pwd`" >> .zshrc
 
+echo "Install completed!"
+echo "please change login shell to zsh with:"
+echo "  chsh -s /bin/zsh"
 
 # completed
 popd
