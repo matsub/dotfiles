@@ -23,5 +23,4 @@ fi
 #   anyenv
 # ----------
 if type anyenv &> /dev/null; then
-    anyenv install pyenv
 fi
