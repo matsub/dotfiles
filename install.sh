@@ -6,7 +6,7 @@ if [ -z $DOTDIR ]; then
 else
     # update dotfiles
     pushd $DOTDIR
-    git pull origin master:master
+    git pull origin master
 fi
 
 git submodule init
@@ -22,5 +22,6 @@ pushd requirements
 sh install.sh
 popd
 
+echo "export DOTDIR=`pwd`" >> .zshrc
 # completed
 popd

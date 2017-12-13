@@ -12,7 +12,7 @@ fi
 
 #   neovim-plug
 # ------------
-if type nvim > /dev/null 2>&1; then
+if type nvim &> /dev/null; then
     # download
     curl -fLo .vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -22,11 +22,13 @@ fi
 
 #   anyenv
 # ----------
-if type anyenv > /dev/null 2>&1; then
+if type anyenv &> /dev/null; then
     anyenv install pyenv
     anyenv install rbenv
 
+    exec $SHELL -l
     eval "$(anyenv init -)"
+
     # pyenv-virtualenv
     git clone https://github.com/yyuu/pyenv-virtualenv.git \
         $(pyenv root)/plugins/pyenv-virtualenv
