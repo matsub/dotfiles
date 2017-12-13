@@ -22,6 +22,11 @@ pushd requirements
 sh install.sh
 popd
 
+
+# change login shell to zsh
+chsh -s /bin/zsh
 echo "export DOTDIR=`pwd`" >> .zshrc
+
+
 # completed
 popd
