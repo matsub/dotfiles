@@ -22,5 +22,3 @@ fi
 
 #   anyenv
 # ----------
-if type anyenv &> /dev/null; then
-fi
