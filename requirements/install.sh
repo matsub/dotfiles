@@ -24,5 +24,4 @@ fi
 # ----------
 if type anyenv &> /dev/null; then
     anyenv install pyenv
-    anyenv install rbenv
 fi
