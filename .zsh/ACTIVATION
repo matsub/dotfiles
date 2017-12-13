@@ -3,8 +3,8 @@ typeset -U path cdpath fpath manpath PATH
 export PATH="$PATH:$XDG_CONFIG_HOME/yarn/global/node_modules/.bin"
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
 
-eval "$(anyenv init -)"
 eval "$(docker-machine env docker)"
 
 # additional environment managers
+eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
