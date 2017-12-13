@@ -17,8 +17,5 @@ if type nvim &> /dev/null; then
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     # install
-    nvim +PlugInstall +qall
+    nvim +PlugInstall
 fi
-
-#   anyenv
-# ----------
