@@ -3,7 +3,8 @@
 module.exports = {
   // add your custom rules here
   'parserOptions': {
-    'ecmaVersion': 8 // or 2017
+    'ecmaVersion': 8, // or 2017
+    'sourceType': 'module'
   },
   'rules': {
     // allow paren-less arrow functions
