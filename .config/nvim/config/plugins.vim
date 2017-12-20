@@ -63,13 +63,14 @@ let g:ale_linters = {
 nmap <silent> <C-p> <Plug>(ale_previous_wrap)
 nmap <silent> <C-n> <Plug>(ale_next_wrap)
 
-" ale
+" vim-shebang
 " ---
-
 let g:shebang#shebangs = {
-            \ 'python': '#!/bin/python',
-            \ 'sh': '#!/bin/sh'
+            \ 'python': "#!/usr/bin/env python\n# -*- coding: utf-8 -*-",
+            \ 'sh': "#!/bin/sh"
             \ }
+
+au BufNewFile * ShebangInsert
 
 " vim-indent-guides
 " -----------------

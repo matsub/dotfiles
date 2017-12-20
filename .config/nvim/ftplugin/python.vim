@@ -1,8 +1,6 @@
 set makeprg=nosetests
 setlocal wildignore=*.pyc
 
-autocmd BufNewFile *.py 0put =\"#!/usr/bin/env python\<nl># -*- coding: utf-8 -*-\<nl>\"|$
-
 " call autopep8
 " check this: " http://ton-up.net/technote/2013/11/26/vim-python-style-check-and-fix/
 function! Preserve(command)
