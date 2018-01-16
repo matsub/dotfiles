@@ -6,5 +6,6 @@ export PYTHON_CONFIGURE_OPTS="--enable-framework"
 eval "$(docker-machine env docker)"
 
 # additional environment managers
+eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"

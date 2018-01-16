@@ -1,4 +1,9 @@
 #!/bin/sh
+
+echo "1) Install dotfiles only"
+echo "2) Install dotfiles and its plugins"
+echo "3) Install all environments (This installs applications I use)"
+
 if [ -z $DOTDIR ]; then
     # cloning repo
     git clone https://github.com/matsub/dotfiles.git
@@ -23,8 +28,6 @@ sh install.sh
 popd
 
 # change login shell to zsh
-echo "export DOTDIR=`pwd`" >> .zshrc
-
 echo "Install completed!"
 echo "please change login shell to zsh with:"
 echo "  chsh -s /bin/zsh"
