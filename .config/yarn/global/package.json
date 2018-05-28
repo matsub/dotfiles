@@ -2,6 +2,8 @@
   "dependencies": {
     "emojipacks": "^0.0.5",
     "eslint": "^3.15.0",
+    "mermaid": "^8.0.0-rc.8",
+    "mermaid.cli": "^0.4.6",
     "parcel-bundler": "^1.1.0",
     "sacloud": "^0.0.16",
     "uiflow": "^1.1.8",
