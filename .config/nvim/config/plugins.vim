@@ -25,7 +25,7 @@ Plug 'godlygeek/tabular', {'for': 'markdown'}
 Plug 'https://bitbucket.org/matsub/vim-statusline.git'
 Plug 'https://bitbucket.org/matsub/vim-binary.git'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'morhetz/gruvbox'
+Plug 'AlessandroYorba/Sierra'
 
 
 " ============
@@ -40,6 +40,9 @@ Plug 'othree/html5.vim'
 
 " - ES6
 Plug 'othree/yajs'
+
+" - terraform
+Plug 'hashivim/vim-terraform'
 
 " - fish
 "Plug 'aliva/vim-fish'
@@ -83,4 +86,5 @@ let g:indent_guides_indent_levels=4
 
 " plugged colorscheme
 " -------------------
-colorscheme gruvbox
+let g:sierra_Pitch = 1
+colorscheme sierra 
