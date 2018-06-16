@@ -1,6 +1,6 @@
 set -x XDG_CONFIG_HOME $HOME/.config
 
-source modules/environments.fish
-source modules/completions
-source modules/alias.fish
-source modules/plugin-settings.fish
+source $XDG_CONFIG_HOME/fish/modules/environments.fish
+source $XDG_CONFIG_HOME/fish/modules/completions.fish
+source $XDG_CONFIG_HOME/fish/modules/alias.fish
+source $XDG_CONFIG_HOME/fish/modules/plugin-settings.fish
