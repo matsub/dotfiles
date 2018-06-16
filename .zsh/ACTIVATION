@@ -3,7 +3,6 @@ typeset -U path cdpath fpath manpath PATH
 
 export GOROOT="/usr/local/opt/go/libexec"
 export GOPATH="$HOME/.go"
-export PYTHON_CONFIGURE_OPTS="--enable-framework"
 export PATH="$PATH:$XDG_CONFIG_HOME/yarn/global/node_modules/.bin"
 export PATH="$PATH:$GOROOT/bin"
 export PATH="$PATH:$GOPATH/bin"

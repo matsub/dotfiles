@@ -45,7 +45,7 @@ Plug 'othree/yajs'
 Plug 'hashivim/vim-terraform'
 
 " - fish
-"Plug 'aliva/vim-fish'
+Plug 'dag/vim-fish'
 call plug#end()
 
 

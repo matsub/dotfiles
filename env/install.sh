@@ -10,6 +10,12 @@ if [ $(uname) = "Darwin" ];then
     popd
 fi
 
+#  fisherman
+# -----------
+if type fish &> /dev/null; then
+    curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+fi
+
 #  neovim-plug
 # -------------
 if type nvim &> /dev/null; then
