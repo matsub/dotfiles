@@ -1,5 +1,5 @@
-installing
-========
+Install
+=======
 
 ```sh
 # with curl
@@ -8,10 +8,10 @@ curl -L https://dotfiles.matsub.net | sh
 wget -qO - https://dotfiles.matsub.net | sh
 ```
 
-uninstalling
-========
 
-### unlink
+Uninstall
+=========
+
 ```sh
-./uninstall.sh
+make clean
 ```
