@@ -50,8 +50,8 @@ echo "===================="
 printf "\e[m"
 echo "please change login shell with:"
 echo "  chsh -s /bin/zsh"
-echo "or"
-echo "  chsh -s /bin/fish"
+echo "or add /use/local/bin/fish to /etc/shells and:"
+echo "  chsh -s /use/local/bin/fish"
 echo ""
 
 # back to initial path
