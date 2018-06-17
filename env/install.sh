@@ -1,4 +1,5 @@
 #!/bin/sh
+pushd env
 if [ $(uname) = "Darwin" ];then
     #   macOS
     # =========
@@ -25,3 +26,4 @@ if type nvim &> /dev/null; then
     # install
     nvim +PlugInstall +qa
 fi
+popd

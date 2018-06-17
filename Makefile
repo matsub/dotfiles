@@ -29,9 +29,7 @@ all: environment
 	$(call bold)
 	@echo "=> Install Plugins \$$HOME !"
 	$(call reset)
-	@pushd env
-	@sh install.sh
-	@popd
+	@sh env/install.sh
 	$(call bold)
 	@echo "=> Done !"
 	$(call reset)
