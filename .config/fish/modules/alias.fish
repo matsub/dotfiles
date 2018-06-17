@@ -16,3 +16,10 @@ alias stime="/usr/bin/time -p"
 alias reload="source $XDG_CONFIG_HOME/fish/config.fish"
 alias randgen="openssl rand -base64"
 alias clock="tty-clock -DsC 7"
+
+# instant fish
+function docker-clean -d "remove docker image without label"
+    for image in (docker images | grep none | tr -s " " | cut -f3 -d" ")
+        docker rmi "$image"
+    end
+end
