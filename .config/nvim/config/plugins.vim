@@ -46,6 +46,9 @@ Plug 'hashivim/vim-terraform'
 
 " - fish
 Plug 'dag/vim-fish'
+
+" - Docker
+Plug 'ekalinin/Dockerfile.vim'
 call plug#end()
 
 
