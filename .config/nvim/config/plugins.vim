@@ -87,5 +87,7 @@ let g:indent_guides_indent_levels=4
 " plugged colorscheme
 " -------------------
 let g:sierra_Pitch = 1
-colorscheme sierra 
+if !empty(glob("~/.vim/bundle/Sierra/colors/sierra.vim"))
+    colorscheme sierra
+endif
 hi Normal guibg=NONE ctermbg=NONE
