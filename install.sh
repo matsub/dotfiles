@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 echo ""
 echo "                   _       _    __ _ _                        "
 echo "                __| | ___ | |_ / _(_) | ___  ___              "
@@ -98,6 +99,7 @@ case $choice in
         exit
         ;;
     4) # Cancel
+        rm -rf $repo
         popd > /dev/null
         exit
         ;;

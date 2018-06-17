@@ -44,5 +44,5 @@ clean:
 	$(call reset)
 	@echo ""
 	@echo "To complete cleaning up my environment, please execute"
-	@echo "    cd \$$MDOTDIR"
+	@echo "    cd \$$MDOTDIR/.."
 	@echo "    rm -rf dotfiles"
