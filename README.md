@@ -3,9 +3,9 @@ Install
 
 ```sh
 # with curl
-curl -L https://dotfiles.matsub.net | sh
+sh -c $(curl -L https://dotfiles.matsub.net)
 # with wget
-wget -qO - https://dotfiles.matsub.net | sh
+sh -c $(wget -qO - https://dotfiles.matsub.net)
 ```
 
 
