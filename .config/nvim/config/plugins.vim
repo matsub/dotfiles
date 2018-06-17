@@ -88,3 +88,4 @@ let g:indent_guides_indent_levels=4
 " -------------------
 let g:sierra_Pitch = 1
 colorscheme sierra 
+hi Normal guibg=NONE ctermbg=NONE

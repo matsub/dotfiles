@@ -58,7 +58,7 @@ font:
     # style: Italic
 
   # Point size of the font
-  size: 18.0
+  size: 12.0
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
@@ -221,11 +221,11 @@ live_config_reload: true
 # Entries in shell.args are passed unmodified as arguments to the shell.
 #
 shell:
-  program: /bin/zsh
+  program: /usr/local/bin/fish
   args:
     - --login
     - -c
-    - tmux attach || tmux new
+    - tmux attach; or tmux new
 
 # Key bindings
 #
