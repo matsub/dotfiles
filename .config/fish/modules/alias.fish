@@ -13,6 +13,6 @@ alias chrome-headless="chrome --headless --disable-gpu"
 
 # tools
 alias stime="/usr/bin/time -p"
-alias reload="exec -l $SHELL"
+alias reload="source $XDG_CONFIG_HOME/fish/config.fish"
 alias randgen="openssl rand -base64"
 alias clock="tty-clock -DnsC 7"
