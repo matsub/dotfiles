@@ -95,6 +95,7 @@ case $choice in
     3) # Remove this dotfiles
         make clean
         popd > /dev/null
+        exit
         ;;
     4) # Cancel
         popd > /dev/null
