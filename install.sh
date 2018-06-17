@@ -98,6 +98,7 @@ case $choice in
         exit
         ;;
     4) # Cancel
+        echo $repo
         rm -rf $repo
         popd > /dev/null
         exit
