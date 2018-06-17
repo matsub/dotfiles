@@ -114,8 +114,8 @@ echo "===================="
 printf "\e[m"
 echo "please change login shell with:"
 echo "  chsh -s /bin/zsh"
-echo "or add /use/local/bin/fish to /etc/shells and:"
-echo "  chsh -s /use/local/bin/fish"
+echo "or add /usr/local/bin/fish to /etc/shells and:"
+echo "  chsh -s /usr/local/bin/fish"
 echo ""
 
 # back to initial path
