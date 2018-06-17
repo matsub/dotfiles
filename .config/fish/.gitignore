@@ -1,4 +1,5 @@
 fishd.*
+conf.d
 completions
 functions
 !functions/fish_prompt.fish
