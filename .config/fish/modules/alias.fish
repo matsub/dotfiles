@@ -3,7 +3,7 @@ alias la="ls -lGa"
 alias vim="nvim"
 alias vi="vim"
 alias py="python3"
-alias tk="tmux kill-session -t"
+alias vimdiff="nvim -d"
 
 # CLI chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
@@ -16,6 +16,8 @@ alias stime="/usr/bin/time -p"
 alias reload="source $XDG_CONFIG_HOME/fish/config.fish"
 alias randgen="openssl rand -base64"
 alias clock="tty-clock -DsC 7"
+alias tk="tmux kill-session -t"
+alias docker-clean="docker rm (docker ps -aq)"
 
 # instant fish
 function docker-clean -d "remove docker image without label"
