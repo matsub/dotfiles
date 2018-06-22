@@ -40,6 +40,8 @@ Plug 'othree/html5.vim'
 
 " - ES6
 Plug 'othree/yajs'
+"   - typescript
+Plug 'leafgarland/typescript-vim'
 
 " - terraform
 Plug 'hashivim/vim-terraform'
