@@ -67,6 +67,7 @@ let g:nerdtree_tabs_open_on_console_startup=2
 let g:ale_linters = {
             \'vue': ['eslint'],
             \'html': [],
+            \'cpp': ['clang', 'cppcheck', 'cpplint'],
             \}
 nmap <silent> <C-p> <Plug>(ale_previous_wrap)
 nmap <silent> <C-n> <Plug>(ale_next_wrap)

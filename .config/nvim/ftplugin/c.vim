@@ -1,1 +1,1 @@
-setlocal wildignore=*.o
+set wildignore=*.o
