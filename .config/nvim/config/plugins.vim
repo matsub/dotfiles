@@ -3,7 +3,9 @@ call plug#begin(expand('~/.vim/bundle/'))
 "    SYSTEM
 " ------------
 " - global
-Plug 'scrooloose/nerdtree' | Plug 'jistr/vim-nerdtree-tabs'
+Plug 'scrooloose/nerdtree'
+            \ | Plug 'jistr/vim-nerdtree-tabs'
+            \ | Plug 'albfan/nerdtree-git-plugin'
 Plug 'bronson/vim-visual-star-search'
 Plug 'w0rp/ale'
 Plug 'sbdchd/vim-shebang'
@@ -61,6 +63,21 @@ call plug#end()
 " --------
 nnoremap <silent><C-e> :NERDTreeTabsToggle<CR>
 let g:nerdtree_tabs_open_on_console_startup=2
+
+" NERDTree-git
+" ------------
+let g:NERDTreeIndicatorMapCustom = {
+            \ "Modified"  : "M",
+            \ "Staged"    : "A",
+            \ "Untracked" : "?",
+            \ "Renamed"   : "R",
+            \ "Unmerged"  : "U",
+            \ "Deleted"   : "D",
+            \ "Dirty"     : "✗",
+            \ "Clean"     : "✔︎",
+            \ 'Ignored'   : '_',
+            \ "Unknown"   : "_"
+            \ }
 
 " ale
 " ---
