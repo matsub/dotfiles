@@ -33,6 +33,8 @@ Plug 'AlessandroYorba/Sierra'
 " ============
 "    SYNTAX
 " ------------
+" - english
+Plug 'rhysd/vim-grammarous'
 " - python
 Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
 
