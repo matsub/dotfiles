@@ -47,6 +47,9 @@ Plug 'othree/yajs'
 "   - typescript
 Plug 'leafgarland/typescript-vim'
 
+" - Haskell
+Plug 'neovimhaskell/haskell-vim'
+
 " - terraform
 Plug 'hashivim/vim-terraform'
 
