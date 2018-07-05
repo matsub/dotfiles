@@ -21,5 +21,6 @@ function fish_prompt
     else
         echo -n $ok"._. "
     end
-    echo -n $base(basename $PWD)$orange(__fish_vcs_prompt) (set_color red)'❯'(set_color yellow)'❯'(set_color green)'❯ '
+    echo -n $base(basename $PWD)" "
+    echo -n $orange(__fish_vcs_prompt) (set_color red)'❯'(set_color yellow)'❯'(set_color green)'❯ '
 end
