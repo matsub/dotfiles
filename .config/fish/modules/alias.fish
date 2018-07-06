@@ -8,6 +8,7 @@ alias g="ghci"
 
 # CLI chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias chrome-beta="/Applications/Google\ Chrome\ Beta.app/Contents/MacOS/Google\ Chrome --user-data-dir=~/chromebeta"
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
 alias chrome-headless="chrome --headless --disable-gpu"
@@ -19,6 +20,7 @@ alias randgen="openssl rand -base64"
 alias clock="tty-clock -DsC 7"
 alias tk="tmux kill-session -t"
 alias docker-clean="docker rm (docker ps -aq)"
+alias alacritty="open -n /Applications/Alacritty.app"
 
 # instant fish
 function docker-clean -d "remove docker image without label"
