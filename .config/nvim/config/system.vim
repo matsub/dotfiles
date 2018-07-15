@@ -109,3 +109,7 @@ set wildmode=longest,full
 " ignore case
 set wildignorecase
 inoremap # X#
+
+" DRAWING
+" -------
+set lazyredraw
