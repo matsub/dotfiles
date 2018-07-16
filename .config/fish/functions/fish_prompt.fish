@@ -26,7 +26,7 @@ end
 function fish_right_prompt
     # define colors
     set -g orange (set_color EFA400)
-    set -g gray (set_color 303030)
+    set -g gray (set_color 404040)
     set -g red (set_color CF4F4F)
     set -g reset_color (set_color normal)
 
