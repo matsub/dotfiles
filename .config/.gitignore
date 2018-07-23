@@ -1,4 +1,9 @@
-configstore
-wireshark
-fisherman
-gcloud
+!alacritty
+!asciinema
+!fish
+!gtk-2.0
+!heroku
+!htop
+!nvim
+!yarn
+*

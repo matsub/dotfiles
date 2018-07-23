@@ -8,7 +8,7 @@ set -x PATH /usr/local/bin $PATH
 
 set -x LANG en_US.UTF-8
 set -x HOMEBREW_CASK_OPTS "--caskroom=/usr/local/Caskroom"
-set -g fish_user_paths "/usr/local/opt/llvm/bin" $fish_user_paths
+set -x PROJECT_ID (gcloud config get-value project -q)
 
 # set keybinding mode emacs
 set -U fish_key_bindings fish_default_key_bindings
