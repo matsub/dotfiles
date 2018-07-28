@@ -1,63 +1,77 @@
 call plug#begin(expand('~/.vim/bundle/'))
-" ============
-"    SYSTEM
-" ------------
-" - global
+
+"   GLOBAL
+" ==========
 Plug 'scrooloose/nerdtree'
-            \ | Plug 'jistr/vim-nerdtree-tabs'
-            \ | Plug 'albfan/nerdtree-git-plugin'
-Plug 'bronson/vim-visual-star-search'
+            \| Plug 'jistr/vim-nerdtree-tabs'
+            \| Plug 'albfan/nerdtree-git-plugin'
 Plug 'w0rp/ale'
+Plug 'matsub/statusline.vim'
 Plug 'sbdchd/vim-shebang'
-
-" - python
-Plug 'davidhalter/jedi-vim', {'for': 'python'}
-
-" - go
-Plug 'fatih/vim-go', {'for': 'go'} | Plug 'jodosha/vim-godebug'
-
-" - markdown
-Plug 'kannokanno/previm', {'for': 'markdown'}
-Plug 'godlygeek/tabular', {'for': 'markdown'}
-
-
-" ================
-"    APPEARANCE
-" ----------------
-Plug 'https://bitbucket.org/matsub/vim-statusline.git'
-Plug 'https://bitbucket.org/matsub/vim-binary.git'
+Plug 'bronson/vim-visual-star-search'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'AlessandroYorba/Sierra'
 
 
-" ============
-"    SYNTAX
-" ------------
-" - english
-Plug 'rhysd/vim-grammarous'
-" - python
+"   GRAMMATICAL
+" ===============
+" Plug 'rhysd/vim-grammarous'
+
+
+"   BINARY
+" ==========
+Plug 'matsub/xxd.vim'
+
+
+"   Python
+" ==========
+Plug 'davidhalter/jedi-vim', {'for': 'python'}
 Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
 
-" - html5 & css3 & markdown
-Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
-Plug 'othree/html5.vim'
 
-" - ES6
-Plug 'othree/yajs'
-"   - typescript
+"    Go
+" ========
+Plug 'fatih/vim-go', {'for': 'go'}
+            \| Plug 'jodosha/vim-godebug'
+
+
+"   JavaScript
+" ==============
+Plug 'othree/yajs', {'for': 'javascript'}
 Plug 'leafgarland/typescript-vim'
 
-" - Haskell
+
+"   HTML5
+" =========
+Plug 'othree/html5.vim'
+Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
+Plug 'kannokanno/previm', {'for': 'markdown'}
+Plug 'godlygeek/tabular', {'for': 'markdown'}
+
+
+"   Haskell
+" ===========
 Plug 'neovimhaskell/haskell-vim'
 
-" - terraform
+
+"   HCL
+" =======
 Plug 'hashivim/vim-terraform'
 
-" - fish
+
+"   fish
+" ========
 Plug 'dag/vim-fish'
 
-" - Docker
+
+"   Dockerfile
+" ==============
 Plug 'ekalinin/Dockerfile.vim'
+
+
+"   WebRTC SDP
+" ==============
+Plug 'matsub/rtcweb-sdp.vim'
 call plug#end()
 
 
@@ -100,7 +114,6 @@ let g:shebang#shebangs = {
             \ 'python': "#!/usr/bin/env python\n# -*- coding: utf-8 -*-",
             \ 'sh': "#!/bin/sh"
             \ }
-
 au BufNewFile * ShebangInsert
 
 " vim-indent-guides

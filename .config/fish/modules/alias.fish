@@ -3,8 +3,6 @@ alias la="ls -lGa"
 alias vim="nvim"
 alias vi="vim"
 alias py="python3"
-alias vimdiff="nvim -d"
-alias g="ghci"
 
 # CLI chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
