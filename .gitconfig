@@ -6,6 +6,7 @@
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
 [alias]
+	ch = checkout
 	st = stash
 	ss = status --short --branch
 	tree = log --graph --date=short --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
