@@ -6,7 +6,6 @@ set -x PATH $GOROOT/bin $PATH
 set -x PATH $GOPATH/bin $PATH
 
 set -x LANG en_US.UTF-8
-set -x HOMEBREW_CASK_OPTS "--caskroom=/usr/local/Caskroom"
 set -x PROJECT_ID (gcloud config get-value project -q)
 
 # set keybinding mode emacs
