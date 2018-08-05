@@ -21,7 +21,7 @@ alias docker-clean="docker rm (docker ps -aq)"
 alias alacritty="open -n /Applications/Alacritty.app"
 
 # instant fish
-function docker-clean -d "remove docker image without label"
+function docker-clean-img -d "remove docker image without label"
     for image in (docker images | grep none | tr -s " " | cut -f3 -d" ")
         docker rmi "$image"
     end
