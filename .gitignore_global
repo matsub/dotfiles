@@ -14,6 +14,10 @@ yarn.lock
 node_modules
 .cache
 
+# for golang
+vendor
+Gopkg.lock
+
 # for ruby
 Gemfile.lock
 vendor
