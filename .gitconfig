@@ -27,4 +27,4 @@
 [difftool]
 	prompt = false
 [ghq]
-	root = ~/Develop
+	root = ~/Develop/src

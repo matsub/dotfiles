@@ -9,6 +9,6 @@
     "typescript": "^2.9.2",
     "typescript-eslint-parser": "^16.0.0",
     "uiflow": "^1.1.8",
-    "vue-cli": "^2.9.2"
+    "vue-cli": "^2.9.6"
   }
 }

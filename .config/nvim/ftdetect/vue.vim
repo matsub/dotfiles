@@ -1,1 +1,1 @@
-autocmd BufRead,BufNewFile *.vue setlocal filetype=html.css
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.css
