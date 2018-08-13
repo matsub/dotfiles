@@ -34,5 +34,5 @@ git@github.com:matsub/webapi-experiments.git
 git@github.com:matsub/webrec.git
 git@github.com:matsub/xxd.vim.git
 https://github.com/ccding/go-stun.git
--shallow https://github.com/getify/You-Dont-Know-JS.git
--shallow https://webrtc.googlesource.com/src
+https://github.com/getify/You-Dont-Know-JS.git
+https://webrtc.googlesource.com/src
