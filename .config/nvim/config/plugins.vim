@@ -37,7 +37,7 @@ Plug 'fatih/vim-go', {'for': 'go'}
 
 "   JavaScript
 " ==============
-Plug 'othree/yajs', {'for': 'javascript'}
+Plug 'othree/yajs'
 Plug 'leafgarland/typescript-vim'
 
 
