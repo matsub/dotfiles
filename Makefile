@@ -1,6 +1,7 @@
-DOTIGNORE := .git .gitmodules
+DOTIGNORE := .git .gitmodules .config
 ALLFILES := $(wildcard .??*)
 DOTFILES := $(filter-out $(DOTIGNORE), $(ALLFILES))
+DOTFILES += $(wildcard .config/??*)
 bold = @printf "\e[1m"
 reset = @printf "\e[m"
 
