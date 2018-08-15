@@ -5,7 +5,7 @@ source $XDG_CONFIG_HOME/fish/modules/bind.fish
 source $XDG_CONFIG_HOME/fish/modules/alias.fish
 source $XDG_CONFIG_HOME/fish/modules/plugin-settings.fish
 
-set -x MDOTDIR (dirname (readlink ~/.config))
+set -x MDOTDIR (dirname (readlink ~/.config/fish))
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc' ]
