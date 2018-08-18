@@ -7,6 +7,7 @@ reset = @printf "\e[m"
 
 
 dotfiles: $(foreach file, $(DOTFILES), $(HOME)/$(file))
+	@mkdir -p ~/.config
 	$(call bold)
 	@echo "=> Created symlink to dotfiles on \$$HOME !"
 	$(call reset)
