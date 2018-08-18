@@ -1,19 +1,31 @@
 DOTIGNORE := .git .gitmodules .config
 ALLFILES := $(wildcard .??*)
 DOTFILES := $(filter-out $(DOTIGNORE), $(ALLFILES))
-DOTFILES += $(wildcard .config/??*)
+XDGFILES := $(wildcard .config/??*)
+XDG_CONFIG_HOME ?= "$(HOME)/.config"
 bold = @printf "\e[1m"
 reset = @printf "\e[m"
 
 
-dotfiles: $(foreach file, $(DOTFILES), $(HOME)/$(file))
-	@mkdir -p ~/.config
+_dotfiles: $(foreach file, $(DOTFILES), $(HOME)/$(file))
 	$(call bold)
 	@echo "=> Created symlink to dotfiles on \$$HOME !"
 	$(call reset)
 
 $(HOME)/%: %
 	@ln -sv $(abspath $<) $(HOME)/$<
+
+
+_xdgfiles: $(foreach file, $(XDGFILES), $(XDG_CONFIG_HOME)/$(file))
+	$(call bold)
+	@echo "=> Created symlink to dotfiles on \$$XDG_CONFIG_HOME !"
+	$(call reset)
+
+$(XDG_CONFIG_HOME)/%: %
+	@mkdir -p $(XDG_CONFIG_HOME)
+	@ln -sv $(abspath $<) $(XDG_CONFIG_HOME)/$(notdir $<)
+
+dotfiles: _dotfiles _xdgfiles
 
 
 environment: dotfiles
@@ -39,6 +51,7 @@ all: environment
 
 clean:
 	@$(foreach file, $(DOTFILES), unlink $(HOME)/$(file);)
+	@$(foreach file, $(XDGFILES), unlink $(XDG_CONFIG_HOME)/$(notdir $(file));)
 	$(call bold)
 	@echo "=> All dotfiles has unlinked!"
 	$(call reset)
