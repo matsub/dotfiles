@@ -21,7 +21,6 @@ Gopkg.lock
 # for ruby
 Gemfile.lock
 vendor
-.bundle
 
 # for CI
 .wercker

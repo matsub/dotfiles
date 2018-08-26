@@ -7,6 +7,7 @@
     "parcel-bundler": "^1.1.0",
     "phantomjs": "^2.1.7",
     "sacloud": "^0.0.16",
+    "scssfmt": "^1.0.6",
     "typescript": "^2.9.2",
     "typescript-eslint-parser": "^16.0.0",
     "uiflow": "^1.1.8",
