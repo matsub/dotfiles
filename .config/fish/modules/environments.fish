@@ -1,9 +1,10 @@
 # set path
 set -x GOROOT /usr/local/opt/go/libexec
 set -x GOPATH $HOME/Develop
-set -x PATH $XDG_CONFIG_HOME/yarn/global/node_modules/.bin $PATH
-set -x PATH $GOROOT/bin $PATH
-set -x PATH $GOPATH/bin $PATH
+set -x PATH $PATH /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
+set -x PATH $PATH $XDG_CONFIG_HOME/yarn/global/node_modules/.bin
+set -x PATH $PATH $GOROOT/bin
+set -x PATH $PATH $GOPATH/bin
 
 set -x LANG en_US.UTF-8
 set -x PROJECT_ID (gcloud config get-value project -q)

@@ -4,7 +4,6 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
-	autocrlf = input
 [alias]
 	ch = checkout
 	st = stash
