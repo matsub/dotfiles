@@ -10,4 +10,4 @@ source $ZDOTDIR/PLUG-SETTINGS
 source $ZDOTDIR/ACTIVATION
 source $ZDOTDIR/ALIAS
 source $ZDOTDIR/ENVIRONMENTS
-export MDOTDIR=$(dirname $(readlink ~/.config))
+export MDOTDIR=$(dirname $(readlink ~/.zshrc))
