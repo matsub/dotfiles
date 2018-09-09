@@ -31,8 +31,9 @@ Plug 'hynek/vim-python-pep8-indent', {'for': 'python'}
 
 "    Go
 " ========
-Plug 'fatih/vim-go', {'for': 'go'}
+Plug 'fatih/vim-go'
             \| Plug 'jodosha/vim-godebug'
+Plug 'nsf/gocode', {'rtp': 'vim/'}
 
 
 "   JavaScript

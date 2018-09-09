@@ -1,29 +1,30 @@
 [user]
-	name = matsub
-	email = matsub.rk@gmail.com
+    name = matsub
+    email = matsub.rk@gmail.com
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore_global
+    editor = vim
+    excludesfile = ~/.gitignore_global
 [alias]
-	ch = checkout
-	st = stash
-	ss = status --short --branch
-	tree = log --graph --date=short --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
+    ch = checkout
+    st = stash
+    ss = status --short --branch
+    tree = log --graph --date=short --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
 [merge]
-	ff = no
-	tool = nvim -d
+    ff = no
+    tool = nvim -d
 [push]
-	default = current
+    default = current
 [pull]
-	rebase = true
+    rebase = true
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
-	process = git-lfs filter-process
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    required = true
+    process = git-lfs filter-process
 [diff]
-	tool = vimdiff
+    tool = vimdiff
+    indentHeuristic = true
 [difftool]
-	prompt = false
+    prompt = false
 [ghq]
-	root = ~/Develop/src
+    root = ~/Develop/src
