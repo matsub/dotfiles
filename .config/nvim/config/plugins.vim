@@ -73,8 +73,12 @@ Plug 'ekalinin/Dockerfile.vim'
 "   WebRTC SDP
 " ==============
 Plug 'matsub/rtcweb-sdp.vim'
-call plug#end()
 
+
+"   GitHub Actions
+" ==================
+Plug 'matsub/workflow.vim'
+call plug#end()
 
 " ================================
 "    CONFIGURATIONS FOR PLUGINS
