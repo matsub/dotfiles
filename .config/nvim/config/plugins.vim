@@ -77,7 +77,7 @@ Plug 'matsub/rtcweb-sdp.vim'
 
 "   GitHub Actions
 " ==================
-Plug 'matsub/workflow.vim'
+Plug 'matsub/github-actions.vim'
 call plug#end()
 
 " ================================
