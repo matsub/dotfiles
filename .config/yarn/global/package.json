@@ -2,6 +2,8 @@
   "dependencies": {
     "emojipacks": "^0.0.5",
     "eslint": "^4.19.1",
+    "firebase-tools": "^5.1.1",
+    "graphql-cli": "^2.16.7",
     "mermaid": "^8.0.0-rc.8",
     "mermaid.cli": "^0.4.6",
     "parcel-bundler": "^1.1.0",
