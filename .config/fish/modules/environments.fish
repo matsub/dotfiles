@@ -1,7 +1,6 @@
 # set path
 set -x GOROOT /usr/local/opt/go/libexec
 set -x GOPATH $HOME/Develop
-set -x PATH $PATH /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 set -x PATH $PATH $XDG_CONFIG_HOME/yarn/global/node_modules/.bin
 set -x PATH $PATH $GOROOT/bin
 set -x PATH $PATH $GOPATH/bin

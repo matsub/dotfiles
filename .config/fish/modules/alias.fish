@@ -12,13 +12,10 @@ alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
 alias chrome-headless="chrome --headless --disable-gpu"
 
 # tools
-alias stime="/usr/bin/time -p"
 alias reload="source $XDG_CONFIG_HOME/fish/config.fish"
-alias randgen="openssl rand -base64"
 alias clock="tty-clock -DsC 7"
 alias tk="tmux kill-session -t"
 alias docker-clean="docker rm (docker ps -aq)"
-alias alacritty="open -n /Applications/Alacritty.app"
 
 # instant fish
 function docker-clean-img -d "remove docker image without label"
