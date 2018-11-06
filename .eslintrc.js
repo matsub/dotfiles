@@ -6,7 +6,6 @@ module.exports = {
     'ecmaVersion': 8, // or 2017
     'sourceType': 'module'
   },
-  parser: "typescript-eslint-parser",
   'rules': {
     // allow paren-less arrow functions
     'arrow-parens': 0,
