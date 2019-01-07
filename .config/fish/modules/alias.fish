@@ -6,10 +6,13 @@ alias py="python3"
 
 # CLI chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-alias chrome-beta="/Applications/Google\ Chrome\ Beta.app/Contents/MacOS/Google\ Chrome --user-data-dir=~/chromebeta"
+alias chrome-beta="/Applications/Google\ Chrome\ Beta.app/Contents/MacOS/Google\ Chrome --user-data-dir=$HOME/chromebeta"
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
 alias chrome-headless="chrome --headless --disable-gpu"
+
+# CLI FF
+alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox-bin -P"
 
 # tools
 alias reload="source $XDG_CONFIG_HOME/fish/config.fish"
