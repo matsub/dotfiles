@@ -116,7 +116,7 @@ nmap <silent> <C-n> <Plug>(ale_next_wrap)
 " vim-shebang
 " ---
 let g:shebang#shebangs = {
-            \ 'python': "#!/usr/bin/env python\n# -*- coding: utf-8 -*-",
+            \ 'python': "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-",
             \ 'sh': "#!/bin/sh"
             \ }
 au BufNewFile * ShebangInsert
