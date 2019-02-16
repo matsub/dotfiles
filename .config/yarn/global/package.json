@@ -7,6 +7,7 @@
     "mermaid": "^8.0.0-rc.8",
     "mermaid.cli": "^0.4.6",
     "phantomjs": "^2.1.7",
-    "typescript-eslint-parser": "^16.0.0"
+    "typescript-eslint-parser": "^16.0.0",
+    "write-good": "^1.0.1"
   }
 }

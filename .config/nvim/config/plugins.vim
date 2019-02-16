@@ -40,6 +40,7 @@ Plug 'nsf/gocode', {'rtp': 'vim/'}
 " ==============
 Plug 'othree/yajs'
 Plug 'leafgarland/typescript-vim'
+Plug 'mattn/emmet-vim'
 
 
 "   HTML5
@@ -110,6 +111,10 @@ let g:ale_linters = {
             \'html': [],
             \'cpp': ['clang', 'cppcheck', 'cpplint'],
             \}
+let g:ale_fixers = {
+            \'javascript': ['eslint'],
+            \}
+let g:ale_fix_on_save = 1
 nmap <silent> <C-p> <Plug>(ale_previous_wrap)
 nmap <silent> <C-n> <Plug>(ale_next_wrap)
 
