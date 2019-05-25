@@ -6,10 +6,10 @@ setlocal nowrap
 "    CONFIGURATIONS FOR PLUGINS
 " --------------------------------
 if has('nvim')
-    " previm
+    " vim-livedown
     " ------
-    let g:previm_open_cmd = 'open'
-    nnoremap <F5> :PrevimOpen<CR>
+    let g:livedown_browser = 'chrome'
+    nnoremap <F5> :LivedownToggle<CR>
 
     " tabular
     " -------

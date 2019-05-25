@@ -47,7 +47,7 @@ Plug 'mattn/emmet-vim'
 " =========
 Plug 'othree/html5.vim'
 Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
-Plug 'kannokanno/previm', {'for': 'markdown'}
+Plug 'shime/vim-livedown', {'for': 'markdown'}
 Plug 'godlygeek/tabular', {'for': 'markdown'}
 
 
