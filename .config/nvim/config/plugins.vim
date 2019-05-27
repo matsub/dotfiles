@@ -110,6 +110,7 @@ let g:ale_linters = {
             \'vue': ['eslint'],
             \'html': [],
             \'cpp': ['clang', 'cppcheck', 'cpplint'],
+            \'python': ['pycodestyle'],
             \}
 let g:ale_fixers = {
             \'javascript': ['eslint'],
