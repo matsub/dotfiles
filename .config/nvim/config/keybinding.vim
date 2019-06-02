@@ -36,6 +36,9 @@ nnoremap ]z zj
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
+" untab
+inoremap <S-Tab> <C-D>
+
 " disable embedded keymaps
 vnoremap K <Nop>
 nnoremap K <Nop>

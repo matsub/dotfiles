@@ -11,6 +11,8 @@ Plug 'sbdchd/vim-shebang'
 Plug 'bronson/vim-visual-star-search'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'AlessandroYorba/Sierra'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
 
 
 "   GRAMMATICAL
