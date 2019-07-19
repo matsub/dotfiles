@@ -11,9 +11,6 @@ alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Goo
 alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
 alias chrome-headless="chrome --headless --disable-gpu"
 
-# CLI FF
-alias firefox="/Applications/Firefox.app/Contents/MacOS/firefox-bin -P"
-
 # tools
 alias reload="source $XDG_CONFIG_HOME/fish/config.fish"
 alias clock="tty-clock -DsC 7"

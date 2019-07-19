@@ -10,8 +10,6 @@ export LANG=en_US.UTF-8
 HISTFILE=~/.zsh_history
 HISTSIZE=500
 SAVEHIST=200
-setopt hist_ignore_dups
-setopt share_history
 
 
 # ============
@@ -29,10 +27,10 @@ export LSCOLORS=cxfxdxgfbxfxfxdxDxxBxB
 #    PROMPT
 #-------------
 setopt prompt_subst
-PROMPT='%F{yellow}%n %.%f $ '
+PROMPT='%(?,%F{green}._.,%F{red};_;)%f %F{yellow}%.%f ❯❯❯ '
 PROMPT2='%_ ... '
 RPROMPT='%1(v|%F{yellow}%1v%f|)'
-RPROMPT+=' %y%F{cyan}@%f%(?,%F{green},%F{red})%m%f'
+RPROMPT+=' %*'
 SPROMPT='You mean %r? [n, y, a, e]: '
 
 

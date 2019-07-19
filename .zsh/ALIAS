@@ -8,22 +8,21 @@ alias tk="tmux kill-session -t"
 
 # CLI chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias chrome-beta="/Applications/Google\ Chrome\ Beta.app/Contents/MacOS/Google\ Chrome --user-data-dir=$HOME/chromebeta"
 alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
 alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
 alias chrome-headless="chrome --headless --disable-gpu"
 
 # tools
-alias stime="/usr/bin/time -p"
 alias reload="exec -l $SHELL"
-alias randgen="openssl rand -base64"
 alias clock="tty-clock -DnsC 7"
+alias tk="tmux kill-session -t"
+alias docker-clean="docker rm $(docker ps -aq)"
 
-# brew doctor ignoring pyenv config
-alias brewdoc="env PATH=${PATH/${HOME}\/\.pyenv\/shims:/} brew doctor"
-
-function mmdc-foreach {
-    for f in `ls *.mermaid`
+# instant fish
+function docker-clean-img () {
+    for image in $(docker images | grep none | tr -s " " | cut -f3 -d" ")
     do
-        mmdc -i $f -o ${f:r}.svg
+        docker rmi "$image"
     done
 }
