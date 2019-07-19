@@ -26,7 +26,7 @@ endfunc
 if has('nvim')
     " vim-livedown
     " ------
-    let g:livedown_browser = 'chrome'
+    "let g:livedown_browser = 'chrome'
     nnoremap <F5> :LivedownToggle<CR>
 
     " tabular
