@@ -8,8 +8,8 @@ export LANG=en_US.UTF-8
 #    HISTORY
 #--------------
 HISTFILE=~/.zsh_history
-HISTSIZE=500
-SAVEHIST=200
+HISTSIZE=10000
+SAVEHIST=1000
 
 
 # ============
@@ -30,7 +30,7 @@ setopt prompt_subst
 PROMPT='%(?,%F{green}._.,%F{red};_;)%f %F{yellow}%.%f ❯❯❯ '
 PROMPT2='%_ ... '
 RPROMPT='%1(v|%F{yellow}%1v%f|)'
-RPROMPT+=' %*'
+RPROMPT+=' %D %*'
 SPROMPT='You mean %r? [n, y, a, e]: '
 
 

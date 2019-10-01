@@ -25,5 +25,9 @@ zstyle ':completion:*' verbose yes
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' list-colors $LSCOLORS
 
+function _ssh {
+  compadd `grep -r 'Host ' ~/.ssh/ | grep -v '\*' | awk '{print $2}' | sort`;
+}
+
 autoload -U compinit
 compinit -u

@@ -81,6 +81,10 @@ Plug 'matsub/rtcweb-sdp.vim'
 "   GitHub Actions
 " ==================
 Plug 'matsub/github-actions.vim'
+
+"   C++
+" =======
+Plug 'bfrg/vim-cpp-modern'
 call plug#end()
 
 " ================================
@@ -116,6 +120,7 @@ let g:ale_linters = {
             \}
 let g:ale_fixers = {
             \'javascript': ['eslint'],
+            \'cpp': ['clang-format'],
             \}
 let g:ale_fix_on_save = 1
 nmap <silent> <C-p> <Plug>(ale_previous_wrap)

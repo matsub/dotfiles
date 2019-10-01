@@ -7,3 +7,8 @@ export PATH="$PATH:$GOROOT/bin"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/usr/local/src/depot_tools"
 export PATH="$PATH:/usr/local/Cellar/terraform/0.12.2/bin/"
+
+export QTDIR=$(brew --prefix qt5)
+export C_INCLUDE_PATH="/usr/local/include/glib-2.0"
+export CPLUS_INCLUDE_PATH="/usr/local/include/glib-2.0"
+export LIBRARY_PATH="/usr/local/include/glib-2.0"

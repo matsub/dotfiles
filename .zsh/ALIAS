@@ -5,6 +5,7 @@ alias vi="nvim"
 alias vim="nvim"
 alias py="python3"
 alias tk="tmux kill-session -t"
+alias k="kubectl"
 
 # CLI chrome
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
@@ -17,9 +18,15 @@ alias chrome-headless="chrome --headless --disable-gpu"
 alias reload="exec -l $SHELL"
 alias clock="tty-clock -DnsC 7"
 alias tk="tmux kill-session -t"
-alias docker-clean="docker rm $(docker ps -aq)"
 
-# instant fish
+function docker-clean () {
+    for container in $(docker ps -aq)
+    do
+        docker rm "$container"
+    done
+}
+
+# instant zsh
 function docker-clean-img () {
     for image in $(docker images | grep none | tr -s " " | cut -f3 -d" ")
     do

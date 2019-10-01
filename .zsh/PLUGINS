@@ -5,7 +5,7 @@ source $ZPLUG_HOME/init.zsh
 # completions
 zplug "zsh-users/zsh-completions"
 # incremental search
-zplug "hchbaw/auto-fu.zsh", at:pu
+#zplug "hchbaw/auto-fu.zsh", at:pu
 # bunch of tools
 zplug "matsub/zshtools"
 
