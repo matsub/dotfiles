@@ -9,9 +9,6 @@
     st = stash
     ss = status --short --branch
     tree = log --graph --date=short --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
-[merge]
-    ff = no
-    tool = nvim -d
 [push]
     default = current
 [pull]
@@ -26,5 +23,12 @@
     indentHeuristic = true
 [difftool]
     prompt = false
+[merge]
+    ff = no
+    tool = nvim
+[mergetool]
+    keepBackup = false
+[mergetool "nvim"]
+  cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [ghq]
     root = ~/Develop/src
