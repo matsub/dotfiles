@@ -19,6 +19,10 @@ alias reload="exec -l $SHELL"
 alias clock="tty-clock -DnsC 7"
 alias tk="tmux kill-session -t"
 
+function word () {
+    perl -e 'open IN, "</usr/share/dict/words";rand($.) < 1 && ($n=$_) while <IN>;print $n'
+}
+
 function docker-clean () {
     for container in $(docker ps -aq)
     do

@@ -31,3 +31,5 @@ function _ssh {
 
 autoload -U compinit
 compinit -u
+
+source <(kubectl completion zsh)
