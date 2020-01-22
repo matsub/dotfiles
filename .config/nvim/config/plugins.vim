@@ -43,6 +43,7 @@ Plug 'nsf/gocode', {'rtp': 'vim/'}
 Plug 'othree/yajs'
 Plug 'leafgarland/typescript-vim'
 Plug 'mattn/emmet-vim'
+Plug 'mxw/vim-jsx'
 
 
 "   HTML5
